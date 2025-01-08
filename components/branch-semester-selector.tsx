@@ -12,14 +12,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const branches = [
-  "Computer Science",
-  "Electronics",
-  "Mechanical",
-  "Civil",
-  "Electrical",
+  "Information Technology",
 ];
 
-const semesters = Array.from({ length: 8 }, (_, i) => i + 1);
+const semesters = [3] //Array.from({ length: 8 }, (_, i) => i + 1);
 
 export default function BranchSemesterSelector({
   onSubmit,

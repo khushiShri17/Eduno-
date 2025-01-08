@@ -17,21 +17,33 @@ const getSubjects = (branch: string, semester: number): Subject[] => {
   return [
     {
       id: "1",
-      name: "Data Structures",
-      code: "CS201",
-      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&h=300&fit=crop",
+      name: "Energy & Enviromental Engineering",
+      code: "ES-301",
+      image: "https://media.licdn.com/dms/image/v2/C511BAQEFUoQoymunEQ/company-background_10000/company-background_10000/0/1584404294842/global_energy__environmental_engineering_services_ltd_cover?e=1736953200&v=beta&t=A2nqH09Vcnm_X3guH3o34wn3iVTiqwyk2xh3uzscyW4",
     },
     {
       id: "2",
-      name: "Computer Networks",
-      code: "CS202",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop",
+      name: "Discrete Structure",
+      code: "IT-302",
+      image: "https://beta.bgscollege.in/wp-content/uploads/2022/07/DISCRETE-STRUCTURE.png",
     },
     {
       id: "3",
-      name: "Operating Systems",
-      code: "CS203",
-      image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=500&h=300&fit=crop",
+      name: "Data Structure",
+      code: "IT-303",
+      image: "https://i.ytimg.com/vi/Qmt0QwzEmh0/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAYZvp1_7HVUd7kk9mRYfTfNswGag",
+    },
+    {
+      id: "4",
+      name: "Object Oriented Programming & Methodology",
+      code: "IT-304",
+      image: "https://miro.medium.com/v2/resize:fit:600/0*7zMicw-FfThCbN35.png",
+    },
+    {
+      id: "5",
+      name: "Digital Circuits & Systems",
+      code: "IT-305",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQauJEKpxWENy7y1Jvwe2vjIh87M92NKcocrw&s",
     },
   ];
 };

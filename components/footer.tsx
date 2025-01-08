@@ -52,10 +52,10 @@ export default function Footer() {
             <h3 className="font-semibold mb-3">Contact</h3>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">
-                Email: support@eduvault.com
+                Email: anshmishraa.8708@gmail.com
               </li>
               <li className="text-sm text-muted-foreground">
-                Phone: +91 1234567890
+                Phone: +91 7771003775
               </li>
             </ul>
           </div>
