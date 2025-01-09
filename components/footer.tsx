@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center space-x-2">
               <BookOpen className="h-6 w-6" />
-              <span className="font-bold text-xl">EduVault</span>
+              <span className="font-bold text-xl">Eduno</span>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
               Your trusted platform for academic resources.
@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} EduVault. All rights reserved.
+          © {new Date().getFullYear()} Eduno. All rights reserved.
         </div>
       </div>
     </footer>

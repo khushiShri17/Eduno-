@@ -1,4 +1,4 @@
-import { subjects } from '@/lib/data';
+import { subjects, subjectResources } from '@/lib/data';
 import SubjectContent from '@/components/subject/subject-content';
 
 // Required for static site generation with dynamic routes
