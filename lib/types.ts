@@ -6,4 +6,5 @@ export interface Resource {
   uploadedOn: string;
   fileType: string;
   thumbnail: string;
+  pdfUrl?: string; // Added for PDF links
 }
