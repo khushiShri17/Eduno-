@@ -14,19 +14,19 @@ import {
 export default function Home() {
   const contributors = [
     {
-      name: "Ansh Mishra",
+      name: "Nandani Dubey",
       department: "Information Technology",
       year: "2023-2027",
       role: "Notes Provider"
     },
     {
-      name: "Bhanu Vyas",
+      name: "Kourviky Shrivas",
       department: "Information Technology",
       year: "2023-2027",
       role: "Notes Provider"
     },
     {
-      name: "Khushi Pathariya",
+      name: "Arya Rajput",
       department: "Information Technology",
       year: "2023-2027",
       role: "Notes Provider"
