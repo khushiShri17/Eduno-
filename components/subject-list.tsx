@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 
 // Get subjects based on semester
 const getSubjects = (branch: string, semester: number) => {
@@ -66,7 +67,14 @@ export default function SubjectList({
   branch: string;
   semester: number;
 }) {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const subjects = getSubjects(branch, semester);
+
+  const handleChangeSelection = () => {
+    // Clear the URL parameters and return to selection
+    router.push("/features");
+  };
 
   return (
     <div className="space-y-6">
@@ -74,14 +82,17 @@ export default function SubjectList({
         <h2 className="text-2xl font-semibold">
           {branch} - Semester {semester}
         </h2>
-        <Button variant="outline" onClick={() => window.location.reload()}>
+        <Button variant="outline" onClick={handleChangeSelection}>
           Change Selection
         </Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {subjects.map((subject) => (
-          <Link key={subject.id} href={`/subject/${subject.id}`}>
+          <Link 
+            key={subject.id} 
+            href={`/subject/${subject.id}?branch=${encodeURIComponent(branch)}&semester=${semester}`}
+          >
             <Card className="hover:shadow-lg transition-shadow">
               <Image
                 src={subject.image}
