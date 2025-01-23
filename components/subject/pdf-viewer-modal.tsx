@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
@@ -17,13 +18,37 @@ export default function PDFViewerModal({
   pdfUrl,
   title,
 }: PDFViewerModalProps) {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  // Extract the FileID from the Google Drive link
+  const extractFileId = (url: string) => {
+    const match = url.match(/\/file\/d\/(.*?)\/view/);
+    return match ? match[1] : null;
+  };
+
+  const fileId = extractFileId(pdfUrl);
+
+  // Generate the direct download link
+  const downloadUrl = fileId
+    ? `https://drive.google.com/uc?export=download&id=${fileId}`
+    : pdfUrl;
+
   const handleDownload = () => {
+    setIsDownloading(true); // Show the downloading message
+
+    // Create a hidden anchor element for downloading
     const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = `${title}.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    link.href = downloadUrl; // Use the direct download link
+    link.download = `${title}.pdf`; // Set the file name
+    link.style.display = "none"; // Hide the anchor element
+    document.body.appendChild(link); // Append it to the DOM
+    link.click(); // Programmatically click to trigger the download
+    document.body.removeChild(link); // Clean up by removing the element
+
+    // Hide the downloading message after a short delay
+    setTimeout(() => {
+      setIsDownloading(false);
+    }, 3000); // Adjust the delay as needed
   };
 
   return (
@@ -36,12 +61,23 @@ export default function PDFViewerModal({
             Download
           </Button>
         </div>
-        <div className="w-full h-[60vh]"> {/* Adjust the height for PDF view */}
-          <iframe
-            src={pdfUrl}
-            className="w-full h-full rounded-lg"
-            title={title}
-          />
+        {isDownloading && (
+          <p className="text-green-500 text-sm mb-4">
+            Your file is getting ready to download...
+          </p>
+        )}
+        <div className="w-full h-[60vh]">
+          {/* Optional PDF Preview */}
+          {fileId ? (
+            <iframe
+              src={`https://drive.google.com/file/d/${fileId}/preview`}
+              sandbox="allow-scripts allow-same-origin"
+              className="w-full h-full rounded-lg"
+              title={title}
+            />
+          ) : (
+            <p className="text-red-500">Invalid Google Drive link</p>
+          )}
         </div>
       </DialogContent>
     </Dialog>

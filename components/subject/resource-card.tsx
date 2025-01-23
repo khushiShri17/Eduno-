@@ -12,13 +12,15 @@ export default function ResourceCard({ resource }: { resource: Resource }) {
   const handleClick = () => {
     if (resource.pdfUrl) {
       setIsModalOpen(true);
+    } else if (resource.videoUrl) {
+      window.open(resource.videoUrl, '_blank');
     }
   };
 
   return (
     <>
       <Card 
-        className={`${resource.pdfUrl ? 'cursor-pointer hover:shadow-lg transition-shadow' : ''}`}
+        className={`${(resource.pdfUrl || resource.videoUrl) ? 'cursor-pointer hover:shadow-lg transition-shadow' : ''}`}
         onClick={handleClick}
       >
         <Image

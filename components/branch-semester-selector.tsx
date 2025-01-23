@@ -15,7 +15,7 @@ const branches = [
   "Information Technology",
 ];
 
-const semesters = [2, 3] // Added 2nd semester
+const semesters = [2, 3];
 
 export default function BranchSemesterSelector({
   onSubmit,

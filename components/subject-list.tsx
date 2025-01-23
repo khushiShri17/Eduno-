@@ -4,57 +4,55 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { subjects } from "@/lib/data";
-
-interface Subject {
-  id: string;
-  name: string;
-  code: string;
-  image: string;
-}
 
 // Get subjects based on semester
-const getSubjects = (branch: string, semester: number): Subject[] => {
+const getSubjects = (branch: string, semester: number) => {
   if (semester === 2) {
     return [
       {
         id: "m2",
         name: "Mathematics-II",
-        code: "M-201",
+        code: "BSC201",
         image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500&h=300&fit=crop",
+      },
+      {
+        id: "ep",
+        name: "Engineering Physics",
+        code: "BSC202",
+        image: "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?w=500&h=300&fit=crop",
       },
     ];
   } else if (semester === 3) {
     return [
       {
-        id: "1",
-        name: "Energy & Enviromental Engineering",
-        code: "ES-301",
-        image: "https://media.licdn.com/dms/image/v2/C511BAQEFUoQoymunEQ/company-background_10000/company-background_10000/0/1584404294842/global_energy__environmental_engineering_services_ltd_cover?e=1736953200&v=beta&t=A2nqH09Vcnm_X3guH3o34wn3iVTiqwyk2xh3uzscyW4",
+        id: "eee",
+        name: "Energy & Environmental Engineering",
+        code: "ES301",
+        image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=500&h=300&fit=crop",
       },
       {
-        id: "2",
-        name: "Discrete Structure",
-        code: "IT-302",
-        image: "https://beta.bgscollege.in/wp-content/uploads/2022/07/DISCRETE-STRUCTURE.png",
+        id: "dm",
+        name: "Discrete Mathematics",
+        code: "IT302",
+        image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500&h=300&fit=crop",
       },
       {
-        id: "3",
-        name: "Data Structure",
-        code: "IT-303",
-        image: "https://i.ytimg.com/vi/Qmt0QwzEmh0/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAYZvp1_7HVUd7kk9mRYfTfNswGag",
+        id: "ds",
+        name: "Data Structures",
+        code: "IT303",
+        image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500&h=300&fit=crop",
       },
       {
-        id: "4",
+        id: "oop",
         name: "Object Oriented Programming & Methodology",
-        code: "IT-304",
-        image: "https://miro.medium.com/v2/resize:fit:600/0*7zMicw-FfThCbN35.png",
+        code: "IT304",
+        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
       },
       {
-        id: "5",
-        name: "Digital Circuits & Systems",
-        code: "IT-305",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQauJEKpxWENy7y1Jvwe2vjIh87M92NKcocrw&s",
+        id: "dcs",
+        name: "Digital Circuit System",
+        code: "IT305",
+        image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=500&h=300&fit=crop",
       },
     ];
   }

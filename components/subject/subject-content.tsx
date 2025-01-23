@@ -11,11 +11,11 @@ export default function SubjectContent({
   id: string;
   subjectName: string;
 }) {
-  // Get resources for this specific subject
   const resources = subjectResources[id] || {
     notes: [],
     pyq: [],
-    content: []
+    content: [],
+    important: []
   };
 
   return (
@@ -27,7 +27,7 @@ export default function SubjectContent({
           <TabsTrigger value="notes">Notes</TabsTrigger>
           <TabsTrigger value="pyq">Previous Year Questions</TabsTrigger>
           <TabsTrigger value="content">Content</TabsTrigger>
-          <TabsTrigger value="others">Others</TabsTrigger>
+          <TabsTrigger value="important">Important</TabsTrigger>
         </TabsList>
 
         <TabsContent value="notes">
@@ -42,10 +42,8 @@ export default function SubjectContent({
           <ResourceSection resources={resources.content} />
         </TabsContent>
 
-        <TabsContent value="others">
-          <div className="text-center text-muted-foreground py-8">
-            No resources available
-          </div>
+        <TabsContent value="important">
+          <ResourceSection resources={resources.important} />
         </TabsContent>
       </Tabs>
     </div>
