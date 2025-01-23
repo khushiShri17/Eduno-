@@ -37,7 +37,7 @@ export default function SubjectContent({
       <h1 className="text-3xl font-bold mb-8">{subjectName}</h1>
       
       <Tabs defaultValue="notes" className="space-y-6">
-        <TabsList>
+        <TabsList >
           <TabsTrigger value="notes">Notes</TabsTrigger>
           <TabsTrigger value="pyq">Previous Year Questions</TabsTrigger>
           <TabsTrigger value="content">Content</TabsTrigger>

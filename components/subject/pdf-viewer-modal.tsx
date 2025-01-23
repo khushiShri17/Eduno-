@@ -53,33 +53,49 @@ export default function PDFViewerModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl p-4">
-        <div className="flex items-center justify-between mb-4">
-          <DialogTitle className="text-xl font-semibold">{title}</DialogTitle>
-          <Button onClick={handleDownload} variant="outline" size="sm">
-            <Download className="h-4 w-4 mr-2" />
-            Download
-          </Button>
-        </div>
-        {isDownloading && (
-          <p className="text-green-500 text-sm mb-4">
-            Your file is getting ready to download...
-          </p>
-        )}
-        <div className="w-full h-[60vh]">
-          {/* Optional PDF Preview */}
-          {fileId ? (
-            <iframe
-              src={`https://drive.google.com/file/d/${fileId}/preview`}
-              sandbox="allow-scripts allow-same-origin"
-              className="w-full h-full rounded-lg"
-              title={title}
-            />
-          ) : (
-            <p className="text-red-500">Invalid Google Drive link</p>
-          )}
-        </div>
-      </DialogContent>
+      <Dialog open={isOpen} onOpenChange={onClose}>
+  <DialogContent className="max-w-4xl p-4">
+    <div className="flex items-center justify-between mb-4">
+      <DialogTitle className="text-xl font-semibold">{title}</DialogTitle>
+      <div className="flex items-center space-x-4">
+        {/* Shifted Download Button Left */}
+        <Button onClick={handleDownload} variant="outline" size="sm">
+          <Download className="h-4 w-4 mr-2" />
+          Download
+        </Button>
+        {/* Close Button */}
+        <Button
+          onClick={onClose}
+          variant="ghost"
+          size="sm"
+          aria-label="Close"
+          className="p-2"
+        >
+          
+        </Button>
+      </div>
+    </div>
+    {isDownloading && (
+      <p className="text-green-500 text-sm mb-4">
+        Your file is getting ready to download...
+      </p>
+    )}
+    <div className="w-full h-[60vh]">
+      {/* Optional PDF Preview */}
+      {fileId ? (
+        <iframe
+          src={`https://drive.google.com/file/d/${fileId}/preview`}
+          sandbox="allow-scripts allow-same-origin"
+          className="w-full h-full rounded-lg"
+          title={title}
+        />
+      ) : (
+        <p className="text-red-500">Invalid Google Drive link</p>
+      )}
+    </div>
+  </DialogContent>
+</Dialog>
+
     </Dialog>
   );
 }
