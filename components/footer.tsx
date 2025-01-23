@@ -1,5 +1,6 @@
 import { BookOpen } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,10 +8,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <Link href="/" className="flex items-center space-x-2">
-              <BookOpen className="h-6 w-6" />
-              <span className="font-bold text-xl dark:text-white">Eduno</span>
-            </Link>
+          <Link href="/" className="flex items-center space-x-2">
+          <Image src="/logo.png" alt="Eduno Logo" width={60} height={60} />
+          
+        </Link>
             <p className="mt-2 text-sm dark:text-gray-300">
               Your trusted platform for academic resources.
             </p>
