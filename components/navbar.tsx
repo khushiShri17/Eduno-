@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="border-b dark:bg-black">
       <div className="flex h-16 items-center px-4 container mx-auto">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="logo.png" alt="Eduno Logo" width={60} height={60} />
+          <Image src="/logo.png" alt="Eduno Logo" width={60} height={60} />
           
         </Link>
         
