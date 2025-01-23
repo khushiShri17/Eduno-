@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const branches = [
   "Information Technology",
@@ -17,18 +18,32 @@ const branches = [
 
 const semesters = [2, 3];
 
-export default function BranchSemesterSelector({
-  onSubmit,
-}: {
-  onSubmit: (branch: string, semester: number) => void;
-}) {
-  const [branch, setBranch] = useState<string>("");
-  const [semester, setSemester] = useState<number>(0);
+export default function BranchSemesterSelector() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  
+  // Initialize state from URL parameters
+  const [branch, setBranch] = useState<string>(
+    searchParams.get("branch") || ""
+  );
+  const [semester, setSemester] = useState<number>(
+    parseInt(searchParams.get("semester") || "0")
+  );
+
+  const handleSubmit = () => {
+    // Update URL with selected values
+    const params = new URLSearchParams();
+    params.set("branch", branch);
+    params.set("semester", semester.toString());
+    
+    // Use replace to avoid adding to history stack when just selecting options
+    router.push(`/features?${params.toString()}`);
+  };
 
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardContent className="p-6 space-y-4">
-        <Select onValueChange={(value) => setBranch(value)}>
+        <Select value={branch} onValueChange={(value) => setBranch(value)}>
           <SelectTrigger>
             <SelectValue placeholder="Select Branch" />
           </SelectTrigger>
@@ -41,7 +56,10 @@ export default function BranchSemesterSelector({
           </SelectContent>
         </Select>
 
-        <Select onValueChange={(value) => setSemester(parseInt(value))}>
+        <Select 
+          value={semester.toString()} 
+          onValueChange={(value) => setSemester(parseInt(value))}
+        >
           <SelectTrigger>
             <SelectValue placeholder="Select Semester" />
           </SelectTrigger>
@@ -56,7 +74,7 @@ export default function BranchSemesterSelector({
 
         <Button
           className="w-full"
-          onClick={() => onSubmit(branch, semester)}
+          onClick={handleSubmit}
           disabled={!branch || !semester}
         >
           View Resources
