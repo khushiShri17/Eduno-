@@ -55,19 +55,24 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">What Students Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TestimonialCard
-              content="EduVault has been a game-changer for my studies. The organized notes and PYQs helped me excel in my exams."
-              author="Priya Singh"
-              role="Computer Science, 3rd Year"
+              content="This platform saves valuable time by providing all essential study resources in one place, making preparation more efficient. With high-quality, affordable materials, it ensures that students have everything they need to succeed."
+              author="Bhanu Vyas"
+              role="Information Technology, Batch: 2023-2027"
             />
             <TestimonialCard
-              content="Having all resources in one place saves so much time. The quality of materials is exceptional!"
-              author="Rahul Kumar"
-              role="Mechanical Engineering, 4th Year"
+              content="This platform offers well-structured notes and comprehensive resources, making learning smarter and more efficient. It provides everything a student needs to excel academically. Having personally benefited from it, I highly recommend this platform to others."
+              author="Khushi Pathariya"
+              role="Information Technology, Batch: 2023-2027"
             />
             <TestimonialCard
-              content="The platform is user-friendly and the content is regularly updated. Highly recommended!"
-              author="Amit Patel"
-              role="Electronics, 2nd Year"
+              content="All-in-one study companion that gathers notes and everything we need in one place."
+              author="Nandani Dubey"
+              role="Information Technology, Batch: 2023-2027"
+            />
+            <TestimonialCard
+              content="I've been using this website for my studies and it's been a informative source. The notes are concise, well-organized, and easy to understand."
+              author="Pranjal kourav"
+              role="Information Technology, Batch: 2023-2027"
             />
           </div>
         </div>
