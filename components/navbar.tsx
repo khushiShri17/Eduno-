@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
@@ -10,14 +10,13 @@ export default function Navbar() {
   const pathname = usePathname();
   
   return (
-    <nav className="border-b">
+    <nav className="border-b dark:bg-gray-800">
       <div className="flex h-16 items-center px-4 container mx-auto">
         <Link href="/" className="flex items-center space-x-2">
-          <BookOpen className="h-6 w-6" />
-          <span className="font-bold text-xl">Eduno</span>
+          <Image src="/logo.png" alt="Eduno Logo" width={120} height={40} className="dark:invert" />
         </Link>
         
-        <div className="flex items-center space-x-6 ml-6">
+        <div className="flex-1 flex justify-center items-center space-x-8">
           <Link 
             href="/"
             className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -44,18 +43,11 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="ml-auto flex items-center space-x-4">
+        <div className="flex items-center space-x-4">
           <ModeToggle />
-          
           <Link href="/feedback">
             <Button size="sm">Feedback</Button>
           </Link>
-          {/* <Link href="/login">
-            <Button variant="outline" size="sm">Log in</Button>
-          </Link>
-          <Link href="/signup">
-            <Button size="sm">Sign up</Button>
-          </Link> */}
         </div>
       </div>
     </nav>
