@@ -10,7 +10,7 @@ export default function Navbar() {
   const pathname = usePathname();
   
   return (
-    <nav className="border-b dark:bg-gray-800">
+    <nav className="border-b dark:bg-black">
       <div className="flex h-16 items-center px-4 container mx-auto">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="logo.png" alt="Eduno Logo" width={60} height={60} />
@@ -46,7 +46,7 @@ export default function Navbar() {
 
         <div className="flex items-center space-x-4">
           <ModeToggle />
-          <Link href="/feedback">
+          <Link href="/contact">
             <Button size="sm">Feedback</Button>
           </Link>
         </div>
