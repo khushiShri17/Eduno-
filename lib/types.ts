@@ -40,3 +40,5 @@ export interface SubjectResources {
   content: ContentResource[];
   important: ContentResource[];
 }
+
+export type Resource = Note | YearWisePYQ | UnitWisePYQ | ContentResource;
