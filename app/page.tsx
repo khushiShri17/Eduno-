@@ -14,6 +14,12 @@ import {
 export default function Home() {
   const contributors = [
     {
+      name: "Aditya Giri",
+      department: "Information Technology",
+      year: "2022-2026",
+      role: "Notes Provider"
+    },
+    {
       name: "Nandani Dubey",
       department: "Information Technology",
       year: "2023-2027",
@@ -31,6 +37,7 @@ export default function Home() {
       year: "2023-2027",
       role: "Notes Provider"
     }
+    
   ];
 
   const testimonials = [
@@ -135,7 +142,7 @@ export default function Home() {
                     <Card className="w-full h-full bg-gradient-to-br from-primary/90 to-primary dark:from-black dark:to-black shadow-xl">
                       <CardContent className="p-6 text-center h-full flex flex-col items-center justify-center">
                         <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">{contributor.name}</h3>
-                        <p className="text-white/80 mb-6">Passionate about sharing knowledge and helping fellow students succeed in their academic journey.</p>
+                        <p className="text-white/80 mb-6">Shared valuable resources to us. Special Thanks to all Contributors</p>
                         <div className="space-y-2">
                           <p className="text-sm text-white/90">{contributor.department}</p>
                           <p className="text-sm text-white/90">{contributor.year}</p>
