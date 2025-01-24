@@ -13,7 +13,7 @@ export default function SignupPage() {
       <Card className="w-full max-w-md p-6 md:p-8">
         <div className="flex flex-col items-center mb-6 md:mb-8">
           <BookOpen className="h-10 w-10 md:h-12 md:w-12 text-blue-500" />
-          <h1 className="text-xl md:text-2xl font-bold mt-4 text-center">Create your EduVault account</h1>
+          <h1 className="text-xl md:text-2xl font-bold mt-4 text-center">Create your Eduno account</h1>
           <p className="text-sm md:text-base text-muted-foreground mt-2 text-center">Join us to access study materials</p>
         </div>
 

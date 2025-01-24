@@ -37,7 +37,20 @@ export default function SubjectContent({
       <h1 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">{subjectName}</h1>
       
       <Tabs defaultValue="notes" className="space-y-4 md:space-y-6">
-        <TabsList className="bg-white dark:bg-gray-800 rounded-lg p-1 md:p-4 shadow-lg w-full flex flex-wrap gap-1 md:gap-2 h-auto">
+      <TabsList
+  className="
+    bg-white dark:bg-gray-800 
+    rounded-lg 
+    p-0 md:p-3 
+    shadow-lg 
+    w-full 
+    flex flex-wrap 
+    gap-2 
+    h-auto
+    max-h-[50vh] 
+    overflow-y-auto
+  "
+>
           <TabsTrigger value="notes" className="text-xs md:text-sm py-1.5 md:py-2 flex-1">Notes</TabsTrigger>
           <TabsTrigger value="pyq" className="text-xs md:text-sm py-1.5 md:py-2 flex-1">Previous Year</TabsTrigger>
           <TabsTrigger value="content" className="text-xs md:text-sm py-1.5 md:py-2 flex-1">Content</TabsTrigger>
