@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {Phone} from "lucide-react"
 import{Mail} from "lucide-react"
+import {MessageCircle} from "lucide-react"
 import {
   Form,
   FormControl,
@@ -92,16 +93,35 @@ export default function ContactPage() {
                 Your input helps us improve and provide better resources for everyone.
               </p>
               <div className="space-y-2">
-                <p className="flex items-center gap-2">
-                <Mail className="w-5 h-5 text-blue-500" />
-                  {/* <span className="font-semibold">Email:</span> */}
-                  <span className="text-muted-foreground">anshmishraa.8708@gmail.com</span>
-                </p>
-                <p className="flex items-center gap-2">
+              <p className="flex items-center gap-2">
+  <Mail className="w-5 h-5 text-blue-500" />
+  {/* <span className="font-semibold">Email:</span> */}
+  <a 
+    href="mailto:anshmishraa.8708@gmail.com" 
+    className="text-muted-foreground underline hover:text-blue-500"
+  >
+    anshmishraa.8708@gmail.com
+  </a>
+</p>
+
+                {/* <p className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-blue-500" />
-                  {/* <span className="font-semibold">Phone:</span> */}
+                  <span className="font-semibold">Phone:</span>
                   <span className="text-muted-foreground">+91 7771003775</span>
-                </p>
+                </p> */}
+                <p className="flex items-center gap-2">
+  <MessageCircle className="w-5 h-5 text-blue-500" />
+  {/* <span className="font-semibold">Phone:</span> */}
+  <a
+    href="https://chat.whatsapp.com/D3sGnPCE4HrH2hcDOcMcKK"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-muted-foreground underline hover:text-blue-500"
+  >
+    Join WhatsApp Group
+  </a>
+</p>
+
               </div>
             </div>
           </Card>
