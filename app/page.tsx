@@ -59,40 +59,44 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen dark:bg-black">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 dark:bg-black">
+      <section className="relative py-12 md:py-20 px-4 dark:bg-black">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 dark:text-white">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 dark:text-white">
             Your Academic Success Starts Here
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto dark:text-gray-300">
+          <p className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto dark:text-gray-300 px-4">
             Access organized study materials, previous year questions, and comprehensive notes all in one place.
           </p>
-          <Link href="/features">
-            <Button size="lg" className="mr-4">Get Started</Button>
-          </Link>
-          <Link href="/contact">
-            <Button variant="outline" size="lg">Learn More</Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
+            <Link href="/features" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto">Get Started</Button>
+            </Link>
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto">Learn More</Button>
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 dark:bg-black">
+      <section className="py-12 md:py-20 dark:bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Why Choose EduVault</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 dark:text-white">
+            Why Choose EduVault
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <FeatureCard
-              icon={<BookOpen className="h-8 w-8" />}
+              icon={<BookOpen className="h-6 w-6 md:h-8 md:w-8" />}
               title="Organized Notes"
               description="Access well-structured notes for all subjects, organized by semester and branch."
             />
             <FeatureCard
-              icon={<FileText className="h-8 w-8" />}
+              icon={<FileText className="h-6 w-6 md:h-8 md:w-8" />}
               title="Previous Year Questions"
               description="Practice with a comprehensive collection of previous year questions."
             />
             <FeatureCard
-              icon={<BookCheck className="h-8 w-8" />}
+              icon={<BookCheck className="h-6 w-6 md:h-8 md:w-8" />}
               title="Study Materials"
               description="Get access to curated study materials and resources."
             />
@@ -101,34 +105,36 @@ export default function Home() {
       </section>
 
       {/* Contributors Section */}
-      <section className="py-20 dark:bg-black">
+      <section className="py-12 md:py-20 dark:bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Our Contributors</h2>
-          <div className="flex flex-wrap justify-center gap-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 dark:text-white">
+            Our Contributors
+          </h2>
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
             {contributors.map((contributor, index) => (
-              <div key={index} className="group perspective-1000">
+              <div key={index} className="group perspective-1000 w-full sm:w-72">
                 <div className="relative transform-style-3d transition-transform duration-500 group-hover:[transform:rotateY(180deg)]">
                   {/* Front of card */}
-                  <div className="w-72 h-96 backface-hidden">
+                  <div className="w-full sm:w-72 h-80 sm:h-96 backface-hidden">
                     <Card className="w-full h-full bg-gradient-to-br from-white to-gray-100 dark:from-black dark:to-black shadow-xl">
                       <CardContent className="p-6 text-center h-full flex flex-col items-center justify-center">
-                        <div className="w-20 h-20 mb-6 rounded-full bg-primary/10 dark:bg-gray-900 flex items-center justify-center">
-                          <User className="h-10 w-10 text-primary dark:text-gray-300" />
+                        <div className="w-16 h-16 md:w-20 md:h-20 mb-4 md:mb-6 rounded-full bg-primary/10 dark:bg-gray-900 flex items-center justify-center">
+                          <User className="h-8 w-8 md:h-10 md:w-10 text-primary dark:text-gray-300" />
                         </div>
-                        <h3 className="text-2xl font-bold mb-2 dark:text-white">{contributor.name}</h3>
+                        <h3 className="text-xl md:text-2xl font-bold mb-2 dark:text-white">{contributor.name}</h3>
                         <p className="text-sm text-muted-foreground dark:text-gray-300">{contributor.department}</p>
                         <p className="text-sm text-muted-foreground dark:text-gray-300">{contributor.year}</p>
-                        <div className="mt-4 inline-flex items-center rounded-full bg-primary/10 dark:bg-gray-900 px-4 py-2">
+                        <div className="mt-4 inline-flex items-center rounded-full bg-primary/10 dark:bg-gray-900 px-3 py-1.5 md:px-4 md:py-2">
                           <span className="text-sm font-medium text-primary dark:text-gray-300">{contributor.role}</span>
                         </div>
                       </CardContent>
                     </Card>
                   </div>
                   {/* Back of card */}
-                  <div className="w-72 h-96 absolute top-0 [transform:rotateY(180deg)] backface-hidden">
+                  <div className="w-full sm:w-72 h-80 sm:h-96 absolute top-0 [transform:rotateY(180deg)] backface-hidden">
                     <Card className="w-full h-full bg-gradient-to-br from-primary/90 to-primary dark:from-black dark:to-black shadow-xl">
                       <CardContent className="p-6 text-center h-full flex flex-col items-center justify-center">
-                        <h3 className="text-2xl font-bold mb-4 text-white">{contributor.name}</h3>
+                        <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">{contributor.name}</h3>
                         <p className="text-white/80 mb-6">Passionate about sharing knowledge and helping fellow students succeed in their academic journey.</p>
                         <div className="space-y-2">
                           <p className="text-sm text-white/90">{contributor.department}</p>
@@ -146,24 +152,26 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 dark:bg-black overflow-hidden">
+      <section className="py-12 md:py-20 dark:bg-black overflow-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">What Students Say</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 dark:text-white">
+            What Students Say
+          </h2>
           <Carousel className="max-w-5xl mx-auto">
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
                   <div className="px-4">
                     <Card className="bg-gradient-to-br from-white to-gray-50 dark:from-black dark:to-black overflow-hidden relative">
-                      <CardContent className="p-12">
-                        <Quote className="absolute top-6 left-6 h-12 w-12 text-primary/10 dark:text-gray-800" />
+                      <CardContent className="p-6 md:p-12">
+                        <Quote className="absolute top-4 md:top-6 left-4 md:left-6 h-8 w-8 md:h-12 md:w-12 text-primary/10 dark:text-gray-800" />
                         <div className="relative">
-                          <p className="text-xl mb-8 leading-relaxed italic dark:text-gray-300">
+                          <p className="text-lg md:text-xl mb-6 md:mb-8 leading-relaxed italic dark:text-gray-300">
                             "{testimonial.content}"
                           </p>
                           <div className="flex items-center">
                             <div className="flex-1">
-                              <p className="font-semibold text-lg dark:text-white">{testimonial.author}</p>
+                              <p className="font-semibold text-base md:text-lg dark:text-white">{testimonial.author}</p>
                               <p className="text-sm text-muted-foreground dark:text-gray-400">{testimonial.role}</p>
                             </div>
                           </div>
@@ -174,7 +182,7 @@ export default function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="flex justify-center mt-8 gap-4">
+            <div className="flex justify-center mt-6 md:mt-8 gap-4">
               <CarouselPrevious className="relative static" />
               <CarouselNext className="relative static" />
             </div>
@@ -190,8 +198,8 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode; titl
     <Card className="dark:bg-black hover:shadow-lg transition-all duration-300">
       <CardContent className="p-6">
         <div className="mb-4 text-primary dark:text-white">{icon}</div>
-        <h3 className="text-xl font-semibold mb-2 dark:text-white">{title}</h3>
-        <p className="text-muted-foreground dark:text-gray-300">{description}</p>
+        <h3 className="text-lg md:text-xl font-semibold mb-2 dark:text-white">{title}</h3>
+        <p className="text-sm md:text-base text-muted-foreground dark:text-gray-300">{description}</p>
       </CardContent>
     </Card>
   );

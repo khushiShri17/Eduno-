@@ -77,17 +77,17 @@ export default function SubjectList({
   };
 
   return (
-    <div className="space-y-6">
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold">
+    <div className="space-y-4 md:space-y-6">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <h2 className="text-xl md:text-2xl font-semibold">
           {branch} - Semester {semester}
         </h2>
-        <Button variant="outline" onClick={handleChangeSelection}>
+        <Button variant="outline" onClick={handleChangeSelection} className="w-full sm:w-auto">
           Change Selection
         </Button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {subjects.map((subject) => (
           <Link 
             key={subject.id} 
@@ -99,16 +99,16 @@ export default function SubjectList({
                 alt={subject.name}
                 width={500}
                 height={300}
-                className="w-full h-48 object-cover rounded-t-lg"
+                className="w-full h-40 md:h-48 object-cover rounded-t-lg"
               />
-              <CardHeader>
-                <CardTitle>{subject.name}</CardTitle>
+              <CardHeader className="p-4 md:p-6">
+                <CardTitle className="text-base md:text-lg">{subject.name}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
+              <CardContent className="p-4 md:p-6 pt-0">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   Subject Code: {subject.code}
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   {branch} - Semester {semester}
                 </p>
               </CardContent>

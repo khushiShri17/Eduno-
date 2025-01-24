@@ -9,23 +9,33 @@ import Link from "next/link"
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-muted/50">
-      <Card className="w-full max-w-md p-8">
-        <div className="flex flex-col items-center mb-8">
-          <BookOpen className="h-12 w-12 text-blue-500" />
-          <h1 className="text-2xl font-bold mt-4">Welcome back to EduVault</h1>
-          <p className="text-muted-foreground mt-2">Login to access your account</p>
+    <div className="min-h-screen flex items-center justify-center bg-muted/50 px-4 py-8">
+      <Card className="w-full max-w-md p-6 md:p-8">
+        <div className="flex flex-col items-center mb-6 md:mb-8">
+          <BookOpen className="h-10 w-10 md:h-12 md:w-12 text-blue-500" />
+          <h1 className="text-xl md:text-2xl font-bold mt-4 text-center">Welcome back to EduVault</h1>
+          <p className="text-sm md:text-base text-muted-foreground mt-2 text-center">Login to access your account</p>
         </div>
 
         <form className="space-y-4">
           <div>
             <Label htmlFor="email">Email or Mobile Number</Label>
-            <Input id="email" type="text" placeholder="Enter your email or mobile number" />
+            <Input 
+              id="email" 
+              type="text" 
+              placeholder="Enter your email or mobile number"
+              className="mt-1"
+            />
           </div>
 
           <div>
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" placeholder="Enter your password" />
+            <Input 
+              id="password" 
+              type="password" 
+              placeholder="Enter your password"
+              className="mt-1"
+            />
           </div>
 
           <Button className="w-full">Login</Button>

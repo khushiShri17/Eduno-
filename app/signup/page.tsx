@@ -9,38 +9,63 @@ import Link from "next/link"
 
 export default function SignupPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-muted/50">
-      <Card className="w-full max-w-md p-8">
-        <div className="flex flex-col items-center mb-8">
-          <BookOpen className="h-12 w-12 text-blue-500" />
-          <h1 className="text-2xl font-bold mt-4">Create your EduVault account</h1>
-          <p className="text-muted-foreground mt-2">Join us to access study materials</p>
+    <div className="min-h-screen flex items-center justify-center bg-muted/50 px-4 py-8">
+      <Card className="w-full max-w-md p-6 md:p-8">
+        <div className="flex flex-col items-center mb-6 md:mb-8">
+          <BookOpen className="h-10 w-10 md:h-12 md:w-12 text-blue-500" />
+          <h1 className="text-xl md:text-2xl font-bold mt-4 text-center">Create your EduVault account</h1>
+          <p className="text-sm md:text-base text-muted-foreground mt-2 text-center">Join us to access study materials</p>
         </div>
 
         <form className="space-y-4">
           <div>
             <Label htmlFor="name">Full Name</Label>
-            <Input id="name" type="text" placeholder="Enter your full name" />
+            <Input 
+              id="name" 
+              type="text" 
+              placeholder="Enter your full name"
+              className="mt-1"
+            />
           </div>
 
           <div>
             <Label htmlFor="roll">Roll Number</Label>
-            <Input id="roll" type="text" placeholder="Enter your roll number" />
+            <Input 
+              id="roll" 
+              type="text" 
+              placeholder="Enter your roll number"
+              className="mt-1"
+            />
           </div>
 
           <div>
             <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" placeholder="Enter your email" />
+            <Input 
+              id="email" 
+              type="email" 
+              placeholder="Enter your email"
+              className="mt-1"
+            />
           </div>
 
           <div>
             <Label htmlFor="mobile">Mobile Number</Label>
-            <Input id="mobile" type="tel" placeholder="Enter your mobile number" />
+            <Input 
+              id="mobile" 
+              type="tel" 
+              placeholder="Enter your mobile number"
+              className="mt-1"
+            />
           </div>
 
           <div>
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" placeholder="Create a password" />
+            <Input 
+              id="password" 
+              type="password" 
+              placeholder="Create a password"
+              className="mt-1"
+            />
           </div>
 
           <Button className="w-full">Sign up</Button>

@@ -44,11 +44,11 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-500" />
-                <p>support@eduvault.com</p>
+                <p>anshmishraa.8708@gmail.com</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-500" />
-                <p>+1 234 567 890</p>
+                <p>+91 7771003775</p>
               </div>
               <div className="flex items-center gap-3">
                 <MessageSquare className="w-5 h-5 text-blue-500" />
