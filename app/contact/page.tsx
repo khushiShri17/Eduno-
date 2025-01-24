@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import {Phone} from "lucide-react"
+import{Mail} from "lucide-react"
 import {
   Form,
   FormControl,
@@ -78,7 +80,8 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto py-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-8">Contact Us</h1>
+        <h1 className="text-3xl font-bold text-center mb-1">Please Give Your Valuable Feedback</h1>
+        <p className="text-gray-400 text-center mb-8">It will just take 30 seconds</p>
         
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="p-6">
@@ -90,11 +93,13 @@ export default function ContactPage() {
               </p>
               <div className="space-y-2">
                 <p className="flex items-center gap-2">
-                  <span className="font-semibold">Email:</span>
+                <Mail className="w-5 h-5 text-blue-500" />
+                  {/* <span className="font-semibold">Email:</span> */}
                   <span className="text-muted-foreground">anshmishraa.8708@gmail.com</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <span className="font-semibold">Phone:</span>
+                <Phone className="w-5 h-5 text-blue-500" />
+                  {/* <span className="font-semibold">Phone:</span> */}
                   <span className="text-muted-foreground">+91 7771003775</span>
                 </p>
               </div>

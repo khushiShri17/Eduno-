@@ -61,7 +61,7 @@ export default function Navbar() {
                 pathname === "/contact" ? "text-primary" : "text-muted-foreground"
               }`}
             >
-              Contact Us
+              Feedback
             </Link>
           </div>
 
