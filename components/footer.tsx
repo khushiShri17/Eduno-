@@ -47,12 +47,12 @@ export default function Footer() {
             <h3 className="text-sm md:text-base font-semibold mb-2 md:mb-3 dark:text-white">Resources</h3>
             <ul className="space-y-1 md:space-y-2">
               <li>
-                <Link href="/notes" className="text-xs md:text-sm dark:text-gray-300 hover:text-primary">
+                <Link href="/features" className="text-xs md:text-sm dark:text-gray-300 hover:text-primary">
                   Notes
                 </Link>
               </li>
               <li>
-                <Link href="/pyq" className="text-xs md:text-sm dark:text-gray-300 hover:text-primary">
+                <Link href="/features" className="text-xs md:text-sm dark:text-gray-300 hover:text-primary">
                   Previous Year Questions
                 </Link>
               </li>
@@ -66,7 +66,15 @@ export default function Footer() {
                 Email: anshmishraa.8708@gmail.com
               </li>
               <li className="text-xs md:text-sm dark:text-gray-300">
-                Phone: +91 7771003775
+                Whatsapp Community : 
+                <a
+    href="https://chat.whatsapp.com/D3sGnPCE4HrH2hcDOcMcKK"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-muted-foreground underline hover:text-blue-500"
+  >
+    Join WhatsApp Group
+  </a>
               </li>
             </ul>
           </div>
