@@ -10,17 +10,16 @@ export default function Navbar() {
   const pathname = usePathname();
   
   return (
-    <nav className="border-b dark:bg-black">
+    <nav className="border-b dark:bg-black sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-16 items-center px-4 container mx-auto">
-        <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo.png" alt="Eduno Logo" width={60} height={60} />
-          
+        <Link href="/" className="flex items-center space-x-2 hover:scale-105">
+          <Image src="/logo.png" alt="Eduno Logo" width={60} height={60}  />
         </Link>
         
         <div className="flex-1 flex justify-center items-center space-x-8">
           <Link 
             href="/"
-            className={`text-sm font-medium transition-colors hover:text-primary ${
+            className={`nav-link text-sm font-medium transition-all duration-300 hover:text-primary ${
               pathname === "/" ? "text-primary" : "text-muted-foreground"
             }`}
           >
@@ -28,7 +27,7 @@ export default function Navbar() {
           </Link>
           <Link 
             href="/features"
-            className={`text-sm font-medium transition-colors hover:text-primary ${
+            className={`nav-link text-sm font-medium transition-all duration-300 hover:text-primary ${
               pathname === "/features" ? "text-primary" : "text-muted-foreground"
             }`}
           >
@@ -36,7 +35,7 @@ export default function Navbar() {
           </Link>
           <Link 
             href="/contact"
-            className={`text-sm font-medium transition-colors hover:text-primary ${
+            className={`nav-link text-sm font-medium transition-all duration-300 hover:text-primary ${
               pathname === "/contact" ? "text-primary" : "text-muted-foreground"
             }`}
           >
@@ -47,7 +46,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           <ModeToggle />
           <Link href="/contact">
-            <Button size="sm">Feedback</Button>
+            <Button size="sm" className="button-hover">Feedback</Button>
           </Link>
         </div>
       </div>

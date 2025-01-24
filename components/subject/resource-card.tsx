@@ -8,7 +8,6 @@ import { Note, YearWisePYQ, UnitWisePYQ, ContentResource } from "@/lib/types";
 
 type ResourceType = Note | YearWisePYQ | UnitWisePYQ | ContentResource;
 
-// Function to get background color based on resource type
 const getBackgroundColor = (resource: ResourceType) => {
   if ('contributor' in resource) return 'bg-blue-500/10 hover:bg-blue-500/20';
   if ('year' in resource) return 'bg-purple-500/10 hover:bg-purple-500/20';
@@ -18,6 +17,7 @@ const getBackgroundColor = (resource: ResourceType) => {
 
 export default function ResourceCard({ resource }: { resource: ResourceType }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = () => {
     if (resource.pdfUrl) {
@@ -50,10 +50,13 @@ export default function ResourceCard({ resource }: { resource: ResourceType }) {
     <>
       <Card 
         className={`${(resource.pdfUrl || 'videoUrl' in resource) ? 'cursor-pointer' : ''} 
-          transition-all duration-300 group ${bgColor} border-none`}
+          transition-all duration-300 group ${bgColor} border-none
+          hover-lift card-hover animate-fade-in`}
         onClick={handleClick}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="absolute top-4 right-4">
+        <div className={`absolute top-4 right-4 transition-transform duration-300 ${isHovered ? 'scale-110' : ''}`}>
           {resource.fileType === 'PDF' ? (
             <FileText className="h-6 w-6 text-muted-foreground/50" />
           ) : (
@@ -62,20 +65,22 @@ export default function ResourceCard({ resource }: { resource: ResourceType }) {
         </div>
         
         <CardHeader>
-          <CardTitle className="text-xl line-clamp-2">{resource.title}</CardTitle>
+          <CardTitle className={`text-xl line-clamp-2 transition-all duration-300 ${isHovered ? 'text-primary' : ''}`}>
+            {resource.title}
+          </CardTitle>
         </CardHeader>
         
         <CardContent>
           <div className="space-y-2 text-sm text-muted-foreground">
             {renderDetails()}
             <div className="pt-2 flex flex-wrap gap-2">
-              <span className="inline-flex items-center rounded-md bg-blue-50 dark:bg-blue-500/10 px-2 py-1 text-xs font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10">
+              <span className="inline-flex items-center rounded-md bg-blue-50 dark:bg-blue-500/10 px-2 py-1 text-xs font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10 transition-all duration-300 hover:scale-105">
                 {resource.subjectCode}
               </span>
-              <span className="inline-flex items-center rounded-md bg-purple-50 dark:bg-purple-500/10 px-2 py-1 text-xs font-medium text-purple-700 dark:text-purple-300 ring-1 ring-inset ring-purple-700/10">
+              <span className="inline-flex items-center rounded-md bg-purple-50 dark:bg-purple-500/10 px-2 py-1 text-xs font-medium text-purple-700 dark:text-purple-300 ring-1 ring-inset ring-purple-700/10 transition-all duration-300 hover:scale-105">
                 Sem {resource.semester}
               </span>
-              <span className="inline-flex items-center rounded-md bg-green-50 dark:bg-green-500/10 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-300 ring-1 ring-inset ring-green-700/10">
+              <span className="inline-flex items-center rounded-md bg-green-50 dark:bg-green-500/10 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-300 ring-1 ring-inset ring-green-700/10 transition-all duration-300 hover:scale-105">
                 {resource.fileType}
               </span>
             </div>
