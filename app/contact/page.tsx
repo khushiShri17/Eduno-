@@ -8,29 +8,66 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { Mail, MessageSquare, Phone, Send } from "lucide-react"
+import { Loader2, Mail, MessageSquare, Phone, Send } from "lucide-react"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
+import { useToast } from "@/hooks/use-toast"
+import { useState } from "react"
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
-  phone: z.string().min(10, "Invalid phone number"),
+  phone: z.string().min(10, "Invalid phone number").max(15, "Invalid phone number"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 })
 
 export default function ContactPage() {
+  const { toast } = useToast()
+  const [isLoading, setIsLoading] = useState(false)
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
   })
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values)
-    // Handle form submission
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    setIsLoading(true)
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxEGZNsvN2g2mPbdLaGwt4EQccdNFRPbe_NYdXmcNy7WN9UrMRWstLpmqY7E7umNVOs/exec', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully.",
+      })
+
+      // Don't reset the form after successful submission
+      // This allows users to send the same message multiple times
+      // form.reset()
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      })
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -67,8 +104,9 @@ export default function ContactPage() {
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your name" {...field} />
+                        <Input placeholder="Enter your name" {...field} disabled={isLoading} />
                       </FormControl>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -80,8 +118,9 @@ export default function ContactPage() {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your email" {...field} />
+                        <Input placeholder="Enter your email" {...field} disabled={isLoading} />
                       </FormControl>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -93,8 +132,9 @@ export default function ContactPage() {
                     <FormItem>
                       <FormLabel>Phone Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your phone number" {...field} />
+                        <Input placeholder="Enter your phone number" {...field} disabled={isLoading} />
                       </FormControl>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -104,21 +144,32 @@ export default function ContactPage() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel>Feedback</FormLabel>
                       <FormControl>
                         <Textarea 
-                          placeholder="Type your message here" 
+                          placeholder="Write your valuable feeback here..." 
                           className="min-h-[120px]"
                           {...field} 
+                          disabled={isLoading}
                         />
                       </FormControl>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
 
-                <Button type="submit" className="w-full">
-                  <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                <Button type="submit" className="w-full" disabled={isLoading}>
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4 mr-2" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </form>
             </Form>
