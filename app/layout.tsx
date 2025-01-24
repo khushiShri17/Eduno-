@@ -80,7 +80,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" />
       </head>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <div className="flex min-h-screen flex-col">
             <Navbar />
             <Suspense fallback={<Loading />}>
@@ -89,7 +89,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <Toaster />
-          <Analytics /> {/* Vercel Analytics at the bottom */}
+          <Analytics />
           <SpeedInsights/>
         </ThemeProvider>
       </body>

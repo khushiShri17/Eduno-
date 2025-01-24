@@ -6,24 +6,34 @@ import { Button } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme } = useTheme();
-  
+  const [mounted, setMounted] = useState(false);
+
+  // Wait until mounted to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Use dark logo by default to ensure visibility in dark mode
+  const logoSrc = mounted ? (theme === 'dark' ? '/dark.png' : '/light.png') : '/dark.png';
+
   return (
     <nav className="border-b dark:bg-black sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 hover:scale-105">
             <Image 
-              src={theme === 'dark' ? '/dark.png' : '/light.png'} 
+              src={logoSrc}
               alt="Logo" 
               width={120} 
               height={120} 
+              className="w-10 h-10 md:w-[120px] md:h-[120px]"
               priority
             />
           </Link>
