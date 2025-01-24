@@ -881,7 +881,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1VcoFAaFogcVhSvm3qFWTdyQbGCKHFjso/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1YzNKVy74BYih43zru2bKAbNW6gN646sy/view?usp=drive_link"
       },
       {
         "id": "ds-pyq-unit-2",
@@ -892,18 +892,29 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1ITog_4uo4DiJFiZUdl2IvXyNGZQSU3oo/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1Til85aOTEtdIxHQWqOUQtvvQuAItU4Zy/view?usp=drive_link"
       },
       {
-        "id": "ds-pyq-unit-3-4",
-        "title": "DS Unit 3 & 4 PYQ - Eduno",
-        "unit": 3.4,
+        "id": "ds-pyq-unit-3",
+        "title": "DS Unit 3 PYQ - Eduno",
+        "unit": 3,
         "subjectCode": "IT 302",
         "subjectName": "Discrete Mathematics",
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1zT3Gl5yTF_N555o6LM-B9YpjAqdqMzPr/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1P3_87EJaDJybK9LWI-5jeOV1nzji9g5H/view?usp=drive_link"
+      },
+      {
+        "id": "ds-pyq-unit-4",
+        "title": "DS Unit 4 PYQ - Eduno",
+        "unit": 4,
+        "subjectCode": "IT 302",
+        "subjectName": "Discrete Mathematics",
+        "department": "Information Technology",
+        "semester": 3,
+        "fileType": "PDF",
+        "pdfUrl": "https://drive.google.com/file/d/1-ocjJr6hQNv1HX4pLsOX_enyXpNSr-Jx/view?usp=drive_link"
       },
       {
         "id": "ds-pyq-unit-5",
@@ -914,9 +925,10 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/138rP4TRJxfRqBwAaxcu1MnucHLfNvcD7/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1tJywfNNaeCTXDMrcg6k_Tv2vx4I5FKlW/view?usp=drive_link"
       }
     ]
+    
      },
     content: [
       {
@@ -996,7 +1008,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1lDQws2ovxUdKRay6sBOSvZbQQ1fXoiig/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1ZL6EmhaIY8lbPYqZgtxQQFeX5q86Tvct/view?usp=drive_link"
       },
       {
         "id": "dsa-unit-2-eduno",
@@ -1007,7 +1019,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1NiZmMiawipmqT_FXn7fFSaHoS7KLLAux/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1URebCb2DNlkaOKtLSMnHSm_TlJk1LV8v/view?usp=drive_link"
       },
       {
         "id": "dsa-unit-3-eduno",
@@ -1018,7 +1030,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1KmFWqTZHaOXCzSVaXdRFukvmTKbk3BMB/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1GLi6u5iQHHX3RuY5BS7X7LZsHz1mT7c5/view?usp=drive_link"
       },
       {
         "id": "dsa-unit-4-eduno",
@@ -1029,7 +1041,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1gFygudX61a_wK39siY5sDOJHSZJFOgjI/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1R7Q2lWef8-4sXuNfarzF28Xb1guNeep9/view?usp=drive_link"
       },
       {
         "id": "dsa-unit-5-eduno",
@@ -1040,9 +1052,10 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1VegquVADuU3FRGj9RZ-bzYpyrmxkAnoc/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1tvndbTECgXu3LAJojoNkpWChS8uUH2RS/view?usp=drive_link"
       }
     ]
+    
      },
     pyq: { yearWise: [
       {
@@ -1125,8 +1138,8 @@ export const subjectResources: Record<string, SubjectResources> = {
         "pdfUrl": "https://drive.google.com/file/d/1TDh-mDR6_6LAr5rKjotzN7ATqZxLYM2j/view?usp=drive_link"
       },
       {
-        "id": "dcs-pyq-unit-5",
-        "title": "DCS Unit 5 PYQ - Eduno",
+        "id": "dsa-pyq-unit-5",
+        "title": "DSA Unit 5 PYQ - Eduno",
         "unit": 5,
         "subjectCode": "IT 303",
         "subjectName": "Data Structures and Algorithms",
@@ -1429,63 +1442,65 @@ export const subjectResources: Record<string, SubjectResources> = {
     important: []
   },
   "dcs": {
-    notes: { rgpv: [
-      {
-        "id": "dcs-notes-rgpv-1",
-        "title": "Unit 1 - DCS Notes",
-        "contributor": "RGPV Notes",
-        "subjectCode": "IT 305",
-        "subjectName": "Data Communication Systems",
-        "department": "Information Technology",
-        "semester": 3,
-        "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1eEaizM8crw61qCjs4uyAXYHPbdUNuxB1/view?usp=drive_link"
-      },
-      {
-        "id": "dcs-notes-rgpv-2",
-        "title": "Unit 2 - DCS Notes",
-        "contributor": "RGPV Notes",
-        "subjectCode": "IT 305",
-        "subjectName": "Data Communication Systems",
-        "department": "Information Technology",
-        "semester": 3,
-        "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1U5ibk11jYkuEJAu0zTtYWtR1_fSseni4/view?usp=drive_link"
-      },
-      {
-        "id": "dcs-notes-rgpv-3",
-        "title": "Unit 3 - DCS Notes",
-        "contributor": "RGPV Notes",
-        "subjectCode": "IT 305",
-        "subjectName": "Data Communication Systems",
-        "department": "Information Technology",
-        "semester": 3,
-        "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1ZILHs3mddtCsE02K1_ci2jUm-YhH1OIv/view?usp=drive_link"
-      },
-      {
-        "id": "dcs-notes-rgpv-4",
-        "title": "Unit 4 - DCS Notes",
-        "contributor": "RGPV Notes",
-        "subjectCode": "IT 305",
-        "subjectName": "Data Communication Systems",
-        "department": "Information Technology",
-        "semester": 3,
-        "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1c-pzFA9OjAxz5ZnK2pibGHvCpeTA4my7/view?usp=drive_link"
-      },
-      {
-        "id": "dcs-notes-rgpv-5",
-        "title": "Unit 5 - DCS Notes",
-        "contributor": "RGPV Notes",
-        "subjectCode": "IT 305",
-        "subjectName": "Data Communication Systems",
-        "department": "Information Technology",
-        "semester": 3,
-        "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/18DA-8nbkLDcyVBk_pIndS_XWuxaWFINl/view?usp=drive_link"
-      }
-    ], college: [
+    notes: { 
+      rgpv: [
+        {
+          "id": "dcs-notes-rgpv-1",
+          "title": "Unit 1 - DCS Notes",
+          "contributor": "RGPV Notes",
+          "subjectCode": "IT 305",
+          "subjectName": "Data Communication Systems",
+          "department": "Information Technology",
+          "semester": 3,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1tsYsK1mhRpiLDW6L-dwPePCDwsKkhQau/view?usp=drive_link"
+        },
+        {
+          "id": "dcs-notes-rgpv-2",
+          "title": "Unit 2 - DCS Notes",
+          "contributor": "RGPV Notes",
+          "subjectCode": "IT 305",
+          "subjectName": "Data Communication Systems",
+          "department": "Information Technology",
+          "semester": 3,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1LR4x0qoaUe_C1QcH95J9RO5p-hMF1kve/view?usp=drive_link"
+        },
+        {
+          "id": "dcs-notes-rgpv-3",
+          "title": "Unit 3 - DCS Notes",
+          "contributor": "RGPV Notes",
+          "subjectCode": "IT 305",
+          "subjectName": "Data Communication Systems",
+          "department": "Information Technology",
+          "semester": 3,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1QyoK5W36KAINjs0_yBiEHxamZ6gvi3Z8/view?usp=drive_link"
+        },
+        {
+          "id": "dcs-notes-rgpv-4",
+          "title": "Unit 4 - DCS Notes",
+          "contributor": "RGPV Notes",
+          "subjectCode": "IT 305",
+          "subjectName": "Data Communication Systems",
+          "department": "Information Technology",
+          "semester": 3,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1gzSoq_-behGhGTtid3UsJKow1-ZxNEBY/view?usp=drive_link"
+        },
+        {
+          "id": "dcs-notes-rgpv-5",
+          "title": "Unit 5 - DCS Notes",
+          "contributor": "RGPV Notes",
+          "subjectCode": "IT 305",
+          "subjectName": "Data Communication Systems",
+          "department": "Information Technology",
+          "semester": 3,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1ST9LFQ507XSKQFXJm0lNj_lhBvTgNLFF/view?usp=drive_link"
+        }
+      ]
+      , college: [
       {
         "id": "dcs-notes-eduno-1",
         "title": "Unit 1 - DCS Notes",
@@ -1495,7 +1510,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1ZL6EmhaIY8lbPYqZgtxQQFeX5q86Tvct/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1lDQws2ovxUdKRay6sBOSvZbQQ1fXoiig/view?usp=drive_link"
       },
       {
         "id": "dcs-notes-eduno-2",
@@ -1506,7 +1521,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1URebCb2DNlkaOKtLSMnHSm_TlJk1LV8v/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1NiZmMiawipmqT_FXn7fFSaHoS7KLLAux/view?usp=drive_link"
       },
       {
         "id": "dcs-notes-eduno-3",
@@ -1517,7 +1532,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1GLi6u5iQHHX3RuY5BS7X7LZsHz1mT7c5/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1KmFWqTZHaOXCzSVaXdRFukvmTKbk3BMB/view?usp=drive_link"
       },
       {
         "id": "dcs-notes-eduno-4",
@@ -1528,7 +1543,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1R7Q2lWef8-4sXuNfarzF28Xb1guNeep9/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1gFygudX61a_wK39siY5sDOJHSZJFOgjI/view?usp=drive_link"
       },
       {
         "id": "dcs-notes-eduno-5",
@@ -1539,9 +1554,10 @@ export const subjectResources: Record<string, SubjectResources> = {
         "department": "Information Technology",
         "semester": 3,
         "fileType": "PDF",
-        "pdfUrl": "https://drive.google.com/file/d/1tvndbTECgXu3LAJojoNkpWChS8uUH2RS/view?usp=drive_link"
+        "pdfUrl": "https://drive.google.com/file/d/1VegquVADuU3FRGj9RZ-bzYpyrmxkAnoc/view?usp=drive_link"
       }
     ]
+    
      },
     pyq: { yearWise: [
       {

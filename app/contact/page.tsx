@@ -13,17 +13,24 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { Loader2, Mail, MessageSquare, Phone, Send } from "lucide-react"
+import { Loader2, Send } from "lucide-react"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { useToast } from "@/hooks/use-toast"
 import { useState } from "react"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
-  phone: z.string().min(10, "Invalid phone number").max(15, "Invalid phone number"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  branch: z.string().min(1, "Please select your branch"),
+  enrollmentNumber: z.string().min(10, "Invalid enrollment number").max(15, "Invalid enrollment number"),
+  feedback: z.string().min(10, "Feedback must be at least 10 characters"),
 })
 
 export default function ContactPage() {
@@ -33,16 +40,16 @@ export default function ContactPage() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
-      email: "",
-      phone: "",
-      message: "",
+      branch: "",
+      enrollmentNumber: "",
+      feedback: "",
     },
   })
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsLoading(true)
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxEGZNsvN2g2mPbdLaGwt4EQccdNFRPbe_NYdXmcNy7WN9UrMRWstLpmqY7E7umNVOs/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwT1KwYI-CpGynyURqq54xcwXhagcWqagjz21WYSgad2TYbJN7OEgT066RE39eYHGkL/exec', {
         method: 'POST',
         body: JSON.stringify(values),
         mode: 'no-cors',
@@ -53,16 +60,14 @@ export default function ContactPage() {
 
       toast({
         title: "Success!",
-        description: "Your message has been sent successfully.",
+        description: "Your feedback has been submitted successfully.",
       })
 
-      // Don't reset the form after successful submission
-      // This allows users to send the same message multiple times
-      // form.reset()
+      form.reset()
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: "Failed to submit feedback. Please try again.",
         variant: "destructive",
       })
     } finally {
@@ -79,17 +84,19 @@ export default function ContactPage() {
           <Card className="p-6">
             <h2 className="text-xl font-semibold mb-6">Get in Touch</h2>
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-500" />
-                <p>anshmishraa.8708@gmail.com</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-blue-500" />
-                <p>+91 7771003775</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <MessageSquare className="w-5 h-5 text-blue-500" />
-                <p>Send us a message and we'll get back to you as soon as possible.</p>
+              <p className="text-muted-foreground">
+                We value your feedback! Please share your thoughts, suggestions, or concerns with us.
+                Your input helps us improve and provide better resources for everyone.
+              </p>
+              <div className="space-y-2">
+                <p className="flex items-center gap-2">
+                  <span className="font-semibold">Email:</span>
+                  <span className="text-muted-foreground">anshmishraa.8708@gmail.com</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="font-semibold">Phone:</span>
+                  <span className="text-muted-foreground">+91 7771003775</span>
+                </p>
               </div>
             </div>
           </Card>
@@ -113,12 +120,36 @@ export default function ContactPage() {
 
                 <FormField
                   control={form.control}
-                  name="email"
+                  name="branch"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel>Branch</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select your branch" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="IT">Information Technology</SelectItem>
+                          <SelectItem value="CS">Computer Science</SelectItem>
+                          <SelectItem value="EC">Electronics & Communication</SelectItem>
+                          <SelectItem value="ME">Mechanical Engineering</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="enrollmentNumber"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Enrollment Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your email" {...field} disabled={isLoading} />
+                        <Input placeholder="Enter your enrollment number" {...field} disabled={isLoading} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -127,27 +158,13 @@ export default function ContactPage() {
 
                 <FormField
                   control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Phone Number</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Enter your phone number" {...field} disabled={isLoading} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="message"
+                  name="feedback"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Feedback</FormLabel>
                       <FormControl>
                         <Textarea 
-                          placeholder="Write your valuable feeback here..." 
+                          placeholder="Write your feedback here..." 
                           className="min-h-[120px]"
                           {...field} 
                           disabled={isLoading}
@@ -167,7 +184,7 @@ export default function ContactPage() {
                   ) : (
                     <>
                       <Send className="w-4 h-4 mr-2" />
-                      Send Message
+                      Send Feedback
                     </>
                   )}
                 </Button>

@@ -7,17 +7,25 @@ import { ModeToggle } from "./mode-toggle";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme } = useTheme();
   
   return (
     <nav className="border-b dark:bg-black sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 hover:scale-105">
-            <Image src="/logo.png" alt="Eduno Logo" width={60} height={60} />
+            <Image 
+              src={theme === 'dark' ? '/dark.png' : '/light.png'} 
+              alt="Logo" 
+              width={120} 
+              height={120} 
+              priority
+            />
           </Link>
           
           {/* Mobile menu button */}
@@ -60,10 +68,10 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <ModeToggle />
             <Link 
-      href="https://chat.whatsapp.com/D3sGnPCE4HrH2hcDOcMcKK" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
+              href="https://chat.whatsapp.com/D3sGnPCE4HrH2hcDOcMcKK" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               <Button size="sm" className="button-hover">Join Our Community</Button>
             </Link>
           </div>

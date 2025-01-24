@@ -1,8 +1,12 @@
-import { BookOpen } from "lucide-react";
+"use client"
+
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
+  const { theme } = useTheme();
+
   return (
     <footer className="border-t dark:bg-black">
       <div className="container mx-auto px-4 py-6 md:py-8">
@@ -10,16 +14,17 @@ export default function Footer() {
           <div className="col-span-2 sm:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
               <Image 
-                src="/logo.png" 
-                alt="Eduno Logo" 
-                width={60} 
-                height={60} 
-                className="w-10 h-10 md:w-[60px] md:h-[60px]" 
+                src={theme === 'dark' ? '/dark.png' : '/light.png'}
+                alt="Logo" 
+                width={120} 
+                height={120} 
+                className="w-10 h-10 md:w-[120px] md:h-[120px]"
+                priority
               />
             </Link>
-            <p className="mt-2 text-xs md:text-sm dark:text-gray-300">
+            {/* <p className="mt-2 text-xs md:text-sm dark:text-gray-300">
               Your trusted platform for academic resources.
-            </p>
+            </p> */}
           </div>
           
           <div>
