@@ -7,16 +7,17 @@ import Footer from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { Suspense } from 'react';
 import Loading from '@/components/loading';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'EduVault - Your Academic Resource Hub',
+  title: 'Eduno - Your Academic Resource Hub',
   description: 'Access organized notes, previous year questions, and comprehensive study materials for engineering students. Find resources by semester and branch.',
   keywords: 'education, study materials, engineering notes, previous year questions, academic resources, RGPV, college notes',
-  authors: [{ name: 'EduVault Team' }],
-  creator: 'EduVault',
-  publisher: 'EduVault',
+  authors: [{ name: 'Eduno Team' }],
+  creator: 'Eduno',
+  publisher: 'Eduno',
   formatDetection: {
     email: false,
     address: false,
@@ -46,20 +47,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://eduvault.netlify.app/',
-    title: 'EduVault - Your Academic Resource Hub',
+    url: 'https://eduno.netlify.app/',
+    title: 'Eduno - Your Academic Resource Hub',
     description: 'Access organized notes, previous year questions, and comprehensive study materials for engineering students.',
-    siteName: 'EduVault',
-    images: [{
-      url: '/logo.png',
-      width: 800,
-      height: 600,
-      alt: 'EduVault Logo',
-    }],
+    siteName: 'Eduno',
+    images: [
+      {
+        url: '/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'Eduno Logo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EduVault - Your Academic Resource Hub',
+    title: 'Eduno - Your Academic Resource Hub',
     description: 'Access organized notes, previous year questions, and comprehensive study materials for engineering students.',
     images: ['/logo.png'],
   },
@@ -85,6 +88,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <Toaster />
+          <Analytics /> {/* Vercel Analytics at the bottom */}
         </ThemeProvider>
       </body>
     </html>
