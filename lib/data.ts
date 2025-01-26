@@ -256,7 +256,69 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLU6SqdYcYsfKqa52m3wyMZb1KVWuZsA2T&si=yGc88IwI0KCQMIe1"
       }
     ],
-    important: []
+    important: [],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Ordinary Differential Equations I",
+        "topics": [
+          "Differential Equations of First Order and First Degree (Leibnitz linear, Bernoulli’s, Exact)",
+          "Differential Equations of First Order and Higher Degree",
+          "Higher order differential equations with constant coefficients",
+          "Homogeneous Linear Differential equations",
+          "Simultaneous Differential Equations"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Ordinary Differential Equations II",
+        "topics": [
+          "Second order linear differential equations with variable coefficients",
+          "Method of variation of parameters",
+          "Power series solutions",
+          "Legendre polynomials",
+          "Bessel functions of the first kind and their properties"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Partial Differential Equations",
+        "topics": [
+          "Formulation of Partial Differential equations",
+          "Linear and Non-Linear Partial Differential Equations",
+          "Homogeneous Linear Partial Differential Equations with constant coefficients"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Functions of Complex Variables",
+        "topics": [
+          "Functions of Complex Variables: Analytic Functions",
+          "Harmonic Conjugate",
+          "Cauchy-Riemann Equations (without proof)",
+          "Line Integral",
+          "Cauchy-Goursat theorem (without proof)",
+          "Cauchy Integral formula (without proof)",
+          "Singular Points, Poles & Residues",
+          "Residue Theorem",
+          "Application of Residue theorem for Evaluation of Real Integral (Unit Circle)"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Vector Calculus",
+        "topics": [
+          "Differentiation of Vectors",
+          "Scalar and vector point function",
+          "Gradient, Geometrical meaning of gradient",
+          "Directional Derivative",
+          "Divergence and Curl",
+          "Line Integral, Surface Integral, and Volume Integral",
+          "Gauss Divergence, Stokes and Green theorems"
+        ]
+      }
+    ]
+    
   },
   // Other subjects with empty arrays
   "ep": {
@@ -453,7 +515,83 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLEYBvmdYQH_b3GqXdz2Z377qWNUTOQPCC&si=zL9nmjDNyDkfQQF5"
       }
     ],
-    important: []
+    important: [],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Wave Nature of Particles and the Schrodinger Equation",
+        "topics": [
+          "Introduction to Quantum mechanics",
+          "Wave nature of Particles, operators",
+          "Time-dependent and time-independent Schrodinger equation for wavefunction",
+          "Application: Particle in a One-dimensional Box",
+          "Born interpretation",
+          "Free-particle wavefunction and wave-packets",
+          "vg and vp relation",
+          "Uncertainty principle"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Wave Optics",
+        "topics": [
+          "Huygens’ principle",
+          "Superposition of waves and interference of light by wave front splitting and amplitude splitting",
+          "Young’s double slit experiment",
+          "Newton’s rings",
+          "Michelson interferometer",
+          "Mach-Zehnder interferometer",
+          "Fraunhofer diffraction from a single slit and a circular aperture",
+          "The Rayleigh criterion for limit of resolution and its application to vision",
+          "Diffraction gratings and their resolving power"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Introduction to Solids",
+        "topics": [
+          "Free electron theory of metals",
+          "Fermi level of Intrinsic and extrinsic semiconductors",
+          "Density of states",
+          "Bloch’s theorem for particles in a periodic potential",
+          "Kronig-Penney model (no derivation) and origin of energy bands",
+          "V-I characteristics of PN junction",
+          "Zener diode",
+          "Solar Cell",
+          "Hall Effect"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Lasers",
+        "topics": [
+          "Einstein’s theory of matter radiation interaction and A and B coefficients",
+          "Amplification of light by population inversion",
+          "Different types of lasers: gas lasers (He-Ne, CO2), solid-state lasers (ruby, Neodymium)",
+          "Properties of laser beams: monochromaticity, coherence, directionality and brightness",
+          "Laser speckles",
+          "Applications of lasers in science, engineering, and medicine",
+          "Introduction to Optical fiber",
+          "Acceptance angle and cone, Numerical aperture, V number, attenuation"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Electrostatics in Vacuum",
+        "topics": [
+          "Calculation of electric field and electrostatic potential for a charge distribution",
+          "Electric displacement",
+          "Basic Introduction to Dielectrics",
+          "Gradient, Divergence and curl",
+          "Stokes’ theorem",
+          "Gauss Theorem",
+          "Continuity equation for current densities",
+          "Maxwell’s equation in vacuum and non-conducting medium",
+          "Poynting vector"
+        ]
+      }
+    ]
+    
   },
   "eee": {
     notes: { rgpv: [
@@ -727,7 +865,99 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLbkIghvjQ7P-UXDAn1vA69Fl2nxdicusP&si=QELtA84XJgYXXag_"
       }
     ],
-    important: []
+    important: [],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Introduction to Energy Science",
+        "topics": [
+          "Introduction to energy systems and resources",
+          "Introduction to Energy, sustainability & the environment",
+          "Overview of energy systems, sources, transformations, efficiency, and storage",
+          "Fossil fuels (coal, oil, oil-bearing shale and sands, coal gasification) - past, present & future",
+          "Remedies & alternatives for fossil fuels - biomass, wind, solar, nuclear, wave, tidal and hydrogen",
+          "Sustainability and environmental trade-offs of different energy systems",
+          "Possibilities for energy storage or regeneration (Ex. Pumped storage hydro power projects, superconductor-based energy storages, high efficiency batteries)"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Ecosystems",
+        "topics": [
+          "Concept of an ecosystem",
+          "Structure and function of an ecosystem",
+          "Producers, consumers and decomposers",
+          "Energy flow in the ecosystem",
+          "Ecological succession",
+          "Food chains, food webs and ecological pyramids",
+          "Introduction, types, characteristic features, structure and function of the following ecosystem:",
+          "a. Forest ecosystem",
+          "b. Grassland ecosystem",
+          "c. Desert ecosystem",
+          "d. Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Biodiversity and its Conservation",
+        "topics": [
+          "Introduction – Definition: genetic, species and ecosystem diversity",
+          "Biogeographical classification of India",
+          "Value of biodiversity: consumptive use, productive use, social, ethical, aesthetic and option values",
+          "Biodiversity at global, National and local levels",
+          "India as a mega-diversity nation",
+          "Hotspots of biodiversity",
+          "Threats to biodiversity: habitat loss, poaching of wildlife, man-wildlife conflicts",
+          "Endangered and endemic species of India",
+          "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Environmental Pollution",
+        "topics": [
+          "Definition, Cause, effects and control measures of Air pollution",
+          "Water pollution, Soil pollution, Marine pollution, Noise pollution, Thermal pollution, Nuclear hazards",
+          "Solid waste Management: Causes, effects and control measures of urban and industrial wastes",
+          "Role of an individual in prevention of pollution",
+          "Pollution case studies",
+          "Disaster management: floods, earthquake, cyclone and landslides"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Social Issues and the Environment",
+        "topics": [
+          "From Unsustainable to Sustainable development",
+          "Urban problems related to energy",
+          "Water conservation, rain water harvesting, watershed management",
+          "Resettlement and rehabilitation of people; its problems and concerns",
+          "Environmental ethics: Issues and possible solutions",
+          "Climate change, global warming, acid rain, ozone layer depletion, nuclear accidents and holocaust",
+          "Case Studies",
+          "Wasteland reclamation",
+          "Consumerism and waste products",
+          "Environment Protection Act",
+          "Air (Prevention and Control of Pollution) Act",
+          "Water (Prevention and control of Pollution) Act",
+          "Wildlife Protection Act",
+          "Forest Conservation Act",
+          "Issues involved in enforcement of environmental legislation",
+          "Public awareness"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Field Work",
+        "topics": [
+          "Visit to a local area to document environmental assets: river/forest/grassland/hill/mountain",
+          "Visit to a local polluted site- Urban/Rural/Industrial/Agricultural",
+          "Study of common plants, insects, birds",
+          "Study of simple ecosystems-pond, river, hill slopes, etc."
+        ]
+      }
+    ]
+    
   },
   "dm": {
     notes: { rgpv: 
@@ -971,7 +1201,63 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLU6SqdYcYsfJ27O0dvuMwafS3X8CecqUg&si=N1KwYQ7KqouAsZRf"
       }
     ],
-    important: []
+    important: [],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Set Theory, Relation, Function, Theorem Proving Techniques",
+        "topics": [
+          "Set Theory: Definition of sets, countable and uncountable sets, Venn Diagrams, proofs of some general identities on sets",
+          "Relation: Definition, types of relation, composition of relations, Pictorial representation of relation, Equivalence relation, Partial ordering relation, Job Scheduling problem",
+          "Function: Definition, type of functions, one to one, into and onto function, inverse function, composition of functions, recursively defined functions, pigeonhole principle",
+          "Theorem proving Techniques: Mathematical induction, Proof by contradiction"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Algebraic Structures",
+        "topics": [
+          "Definition, Properties, types: Semi Groups, Monoid, Groups, Abelian group, properties of groups",
+          "Subgroup, cyclic groups, Normal subgroup, Homomorphism and isomorphism of Groups, example and standard results",
+          "Rings and Fields: definition and standard results"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Propositional Logic",
+        "topics": [
+          "Proposition, First order logic, Basic logical operation, truth tables, tautologies, Contradictions",
+          "Algebra of Proposition, logical implications, logical equivalence, predicates, Normal Forms",
+          "Universal and existential quantifiers",
+          "Introduction to finite state machine: Finite state machines as models of physical system equivalence machines, Finite state machines as language recognizers"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Graph Theory",
+        "topics": [
+          "Introduction and basic terminology of graphs",
+          "Planar graphs, Multigraphs and weighted graphs",
+          "Isomorphic graphs, Paths, Cycles and connectivity",
+          "Shortest path in weighted graph",
+          "Introduction to Eulerian paths and circuits, Hamiltonian paths and circuits",
+          "Graph coloring, chromatic number, Isomorphism and Homomorphism of graphs"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Posets, Hasse Diagram and Lattices",
+        "topics": [
+          "Introduction, ordered set, Hasse diagram of partially ordered set, isomorphic ordered set, well ordered set",
+          "Properties of Lattices, bounded and complemented lattices",
+          "Combinatorics: Introduction, Permutation and combination, Binomial Theorem",
+          "Recurrence Relation and Generating Function: Introduction to Recurrence Relation and Recursive algorithms",
+          "Linear recurrence relations with constant coefficients, Homogeneous solutions, Particular solutions, Total solutions",
+          "Generating functions, Solution by method of generating functions"
+        ]
+      }
+    ]
+    
   },
   "ds": {
     notes: { rgpv: [
@@ -1178,7 +1464,70 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtu.be/J0OvDNmAWNw?si=IRPt2Jmw_6htKS0R"
       }
     ],
-    important: []
+    important: [],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Introduction to Data Structures",
+        "topics": [
+          "Introduction to Data, data type, data object",
+          "Types of data structure – primitive & non-primitive, linear & non-linear",
+          "Operations on data structures – traversing, searching, inserting, deleting",
+          "Complexity analysis – worst case, best case, average case",
+          "Time – space trade off, algorithm efficiency",
+          "Asymptotic notations – big oh, omega, theta"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Arrays & Structures",
+        "topics": [
+          "Introduction, declaration of arrays",
+          "Operations on arrays – inserting, deleting, merging of two arrays",
+          "1-dimensional & 2-dimensional arrays, row & column major representation",
+          "Address calculation in array, storing values in arrays",
+          "Evaluation of polynomial – addition & representation",
+          "Searching & sorting – Introduction, sequential search, binary search, Fibonacci search, indexed sequential search, hashed search",
+          "Types of sorting with general concepts – bubble, heap, insertion, selection, quick, heap, shell, bucket, radix and merge sort"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Stacks & Queues",
+        "topics": [
+          "Basic concept of stacks & queues, array representation of stacks",
+          "Operations on stacks – push, pop, create, getTop, empty",
+          "Linked representation of stack, multiple stack",
+          "Application of stack – Conversion: infix, prefix, postfix and evaluation of arithmetic expression",
+          "Linked representation of queue, operations on queue – insertion & deletion",
+          "Types of queue with functions – circular, deque, priority queue",
+          "Applications of queues – job scheduling, Josephus problem"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Linked Lists",
+        "topics": [
+          "Introduction – basic terminology, memory allocation & deallocation for linked list",
+          "Linked list variants – head pointer, head node, types of linked list – linear & circular linked list",
+          "Doubly linked list, creation of doubly list, deletion of node from doubly linked list, insertion of a node from doubly linked list, traversal of doubly linked list",
+          "Circular linked list – singly circular linked list, circular linked list with header node, doubly circular linked list",
+          "Applications of linked list – polynomial representation & garbage collection"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Trees & Graphs",
+        "topics": [
+          "Basic terminology – general tree, representation of general tree",
+          "Types of trees, binary tree – realization and properties",
+          "Traversal in binary trees – inorder, preorder, postorder, applications of trees",
+          "Graph – Basic Terminologies and representations",
+          "Graph search and traversal algorithms"
+        ]
+      }
+    ]
+    
   },
   "oop": {
     notes: { rgpv: [
@@ -1439,7 +1788,81 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtu.be/mlIUKyZIUUU?si=S9ht-M_a2c4OovZw"
       }
     ],
-    important: []
+    important: [],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Introduction to Object-Oriented Programming",
+        "topics": [
+          "Object oriented programming: Introduction, Application, characteristics",
+          "Difference between object oriented and procedure programming",
+          "Comparison of C and C++",
+          "Cout, Cin, Data Type, Type Conversion",
+          "Control Statement, Loops",
+          "Arrays and string arrays fundamentals",
+          "Function, Returning values from functions, Reference arguments",
+          "Overloaded function, Inline function, Default arguments",
+          "Returning by reference"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Objects and Classes",
+        "topics": [
+          "Implementation of class and object in C++",
+          "Access modifiers, object as data type",
+          "Constructor, destructor",
+          "Object as function arguments, default copy constructor, parameterized constructor",
+          "Returning object from function",
+          "Structures and classes, Classes objects and memory",
+          "Static class data, Arrays of object",
+          "Arrays as class Member Data",
+          "The standard C++ String class",
+          "Run time and Compile time polymorphism"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Operator Overloading and Inheritance",
+        "topics": [
+          "Overloading unary operators, Overloading binary operators",
+          "Data conversion, pitfalls of operators overloading",
+          "Concept of inheritance, Derived class and base class",
+          "Access modifiers, types of inheritance",
+          "Derived class constructors, member function",
+          "Public and private inheritance"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Pointers and Virtual Functions",
+        "topics": [
+          "Addresses and pointers, the address-of operator & pointer and arrays",
+          "Pointer and Function pointer",
+          "Memory management: New and Delete, pointers to objects",
+          "Debugging pointers",
+          "Virtual Function, friend function, Static function, friend class",
+          "Assignment and copy initialization",
+          "This pointer, dynamic type information"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Streams and Files",
+        "topics": [
+          "Streams classes, Stream Errors",
+          "Disk File I/O with streams, file pointers",
+          "Error handling in file I/O with member function",
+          "Overloading the extraction and insertion operators",
+          "Memory as a stream object",
+          "Command line arguments, printer output",
+          "Function templates, Class templates",
+          "Exceptions, Containers, exception handling"
+        ]
+      }
+    ]
+    
+
   },
   "dcs": {
     notes: { 
@@ -1690,6 +2113,64 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLgwJf8NK-2e4zRyPzO6HI9sUOR8v-80RT&si=pUb98npFiA2CWIdI"
       }
     ],
-    important: []
+    important: [],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Number Systems and Logic Gates",
+        "topics": [
+          "Decimal, Binary, Octal, Hexadecimal number systems and radix conversion",
+          "Codes - BCD, excess 3, gray, ASCII",
+          "Boolean algebra - Theorems and properties, Boolean functions, canonical and standard forms",
+          "De Morgan's theorem",
+          "Digital logic gates",
+          "Karnaugh maps"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Combinational Circuits",
+        "topics": [
+          "Introduction to combinational circuits",
+          "Multilevel NAND, NOR implementation",
+          "Designing binary Adders and Subtractors",
+          "Decoder, Encoder, Multiplexer, Demultiplexer circuits"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Sequential Circuits",
+        "topics": [
+          "Introduction to Sequential circuits",
+          "Flip-flops: RS, D, T, JK, M/S JK-flipflops",
+          "Truth tables, excitation tables and characteristic equations",
+          "Clocked and edge triggered flipflops",
+          "Registers - Definition, serial, parallel, shift left/right registers",
+          "Johnson counter, asynchronous and synchronous counters"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Digital Logic Families",
+        "topics": [
+          "Bipolar and unipolar logic families",
+          "Digital IC specifications",
+          "RTL, DTL, All types of TTL circuits",
+          "ECL, IIL, PMOS, NMOS & CMOS Logic"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Clocks and Timing Circuits",
+        "topics": [
+          "Bistable, Monostable & Astable multivibrator",
+          "Schmitt trigger circuit",
+          "Introduction to Analog to Digital & Digital to Analog converters",
+          "Display devices, 7 and 16 segment LED display, LCD"
+        ]
+      }
+    ]
+    
+
   }
 };

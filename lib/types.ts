@@ -28,6 +28,12 @@ export interface ContentResource extends BaseResource {
   uploadedOn: string;
 }
 
+export interface SyllabusUnit {
+  unit: number;
+  title: string;
+  topics: string[];
+}
+
 export interface SubjectResources {
   notes: {
     rgpv: Note[];
@@ -39,6 +45,7 @@ export interface SubjectResources {
   };
   content: ContentResource[];
   important: ContentResource[];
+  syllabus: SyllabusUnit[];
 }
 
 export type Resource = Note | YearWisePYQ | UnitWisePYQ | ContentResource;
