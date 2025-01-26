@@ -3,9 +3,18 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Default to dark logo until mounted
+  const logoSrc = mounted ? (theme === 'dark' ? '/dark.png' : '/light.png') : '/dark.png';
 
   return (
     <footer className="border-t dark:bg-black">
@@ -13,18 +22,17 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           <div className="col-span-2 sm:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
-              <Image 
-                src={theme === 'dark' ? '/dark.png' : '/light.png'}
-                alt="Logo" 
-                width={120} 
-                height={120} 
-                className="w-10 h-10 md:w-[120px] md:h-[120px]"
-                priority
-              />
+              {mounted && (
+                <Image 
+                  src={logoSrc}
+                  alt="Logo" 
+                  width={120} 
+                  height={120} 
+                  className="w-10 h-10 md:w-[120px] md:h-[120px]"
+                  priority
+                />
+              )}
             </Link>
-            {/* <p className="mt-2 text-xs md:text-sm dark:text-gray-300">
-              Your trusted platform for academic resources.
-            </p> */}
           </div>
           
           <div>
@@ -68,13 +76,13 @@ export default function Footer() {
               <li className="text-xs md:text-sm dark:text-gray-300">
                 Whatsapp Community : 
                 <a
-    href="https://chat.whatsapp.com/D3sGnPCE4HrH2hcDOcMcKK"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-muted-foreground underline hover:text-blue-500"
-  >
-    Join WhatsApp Group
-  </a>
+                  href="https://chat.whatsapp.com/D3sGnPCE4HrH2hcDOcMcKK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground underline hover:text-blue-500"
+                >
+                  Join WhatsApp Group
+                </a>
               </li>
             </ul>
           </div>

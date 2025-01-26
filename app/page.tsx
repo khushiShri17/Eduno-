@@ -36,6 +36,12 @@ export default function Home() {
       department: "Information Technology",
       year: "2023-2027",
       role: "Notes Provider"
+    },
+    {
+      name: "Arpita",
+      department: "Information Technology",
+      year: "2023-2027",
+      role: "Notes Provider"
     }
     
   ];

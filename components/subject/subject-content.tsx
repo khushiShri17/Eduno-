@@ -5,6 +5,7 @@ import ResourceSection from "./resource-section";
 import { subjectResources } from "@/lib/data";
 import { Card, CardContent } from "@/components/ui/card";
 import { Wrench } from "lucide-react";
+import SyllabusSection from "./syllabus-section";
 
 export default function SubjectContent({ 
   id, 
@@ -17,7 +18,8 @@ export default function SubjectContent({
     notes: { rgpv: [], college: [] },
     pyq: { yearWise: [], unitWise: [] },
     content: [],
-    important: []
+    important: [],
+    syllabus: []
   };
 
   const WorkInProgress = () => (
@@ -36,26 +38,42 @@ export default function SubjectContent({
     <div className="container mx-auto py-6 md:py-8 px-4">
       <h1 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">{subjectName}</h1>
       
-      <Tabs defaultValue="notes" className="space-y-4 md:space-y-6">
-      <TabsList
-  className="
-    bg-white dark:bg-gray-800 
-    rounded-lg 
-    p-0 md:p-3 
-    shadow-lg 
-    w-full 
-    flex flex-wrap 
-    gap-2 
-    h-auto
-    max-h-[50vh] 
-    overflow-y-auto
-  "
->
-          <TabsTrigger value="notes" className="text-xs md:text-sm py-1.5 md:py-2 flex-1">Notes</TabsTrigger>
-          <TabsTrigger value="pyq" className="text-xs md:text-sm py-1.5 md:py-2 flex-1">Previous Year</TabsTrigger>
-          <TabsTrigger value="content" className="text-xs md:text-sm py-1.5 md:py-2 flex-1">Content</TabsTrigger>
-          <TabsTrigger value="important" className="text-xs md:text-sm py-1.5 md:py-2 flex-1">Important</TabsTrigger>
-        </TabsList>
+      <Tabs defaultValue="syllabus" className="space-y-4 md:space-y-6">
+        <div className="flex justify-center overflow-x-auto pb-2 md:pb-0">
+          <TabsList className="inline-flex h-auto md:h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground relative bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm flex-wrap md:flex-nowrap gap-1">
+          <TabsTrigger 
+              value="syllabus"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md px-2.5 md:px-3 py-1.5 text-xs md:text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-primary data-[state=active]:text-white-foreground data-[state=active]:shadow-sm hover:bg-background/50 data-[state=active]:bg-background min-w-[60px] md:min-w-fit"
+            >
+              Syllabus
+            </TabsTrigger>
+            <TabsTrigger 
+              value="notes" 
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md px-2.5 md:px-3 py-1.5 text-xs md:text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-primary data-[state=active]:text-white-foreground data-[state=active]:shadow-sm hover:bg-background/50 data-[state=active]:bg-background min-w-[60px] md:min-w-fit"
+            >
+              Notes
+            </TabsTrigger>
+            <TabsTrigger 
+              value="pyq"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md px-2.5 md:px-3 py-1.5 text-xs md:text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-primary data-[state=active]:text-white-foreground data-[state=active]:shadow-sm hover:bg-background/50 data-[state=active]:bg-background min-w-[60px] md:min-w-fit"
+            >
+              PYQ
+            </TabsTrigger>
+            <TabsTrigger 
+              value="content"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md px-2.5 md:px-3 py-1.5 text-xs md:text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-primary data-[state=active]:text-white-foreground data-[state=active]:shadow-sm hover:bg-background/50 data-[state=active]:bg-background min-w-[60px] md:min-w-fit"
+            >
+              Content
+            </TabsTrigger>
+            <TabsTrigger 
+              value="important"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md px-2.5 md:px-3 py-1.5 text-xs md:text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-primary data-[state=active]:text-white-foreground data-[state=active]:shadow-sm hover:bg-background/50 data-[state=active]:bg-background min-w-[60px] md:min-w-fit"
+            >
+              Important
+            </TabsTrigger>
+            
+          </TabsList>
+        </div>
 
         <TabsContent value="notes">
           <div className="space-y-6 md:space-y-8">
@@ -110,6 +128,14 @@ export default function SubjectContent({
         <TabsContent value="important">
           {resources.important.length > 0 ? (
             <ResourceSection resources={resources.important} />
+          ) : (
+            <WorkInProgress />
+          )}
+        </TabsContent>
+
+        <TabsContent value="syllabus">
+          {resources.syllabus && resources.syllabus.length > 0 ? (
+            <SyllabusSection units={resources.syllabus} />
           ) : (
             <WorkInProgress />
           )}
