@@ -84,7 +84,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           "department": "Basic Science",
           "semester": 2,
           "fileType": "PDF",
-          "pdfUrl": "https://drive.google.com/file/d/1JnFCCB945MbkGxjqnrO87tWBHkMKV76e/view?usp=drive_link"
+          "pdfUrl": "https://drive.google.com/file/d/1hdWdj5Tgu7L61nVZD3JtztHoNNjffL4i/view?usp=drive_link"
         },
         {
           "id": "m2-notes-eduno-2",
@@ -95,7 +95,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           "department": "Basic Science",
           "semester": 2,
           "fileType": "PDF",
-          "pdfUrl": "https://drive.google.com/file/d/1ww1Vwq7P4FpQgyamx3rP5qvDkuD6kB1D/view?usp=drive_link"
+          "pdfUrl": "https://drive.google.com/file/d/1wIMXNfXpNsnHIy-bhJNghCIBGEzzrGrl/view?usp=drive_link"
         },
         {
           "id": "m2-notes-eduno-3",
@@ -106,7 +106,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           "department": "Basic Science",
           "semester": 2,
           "fileType": "PDF",
-          "pdfUrl": "https://drive.google.com/file/d/1rR1RH6adMniY4yKVNMiy4p_14fSap-Gy/view?usp=drive_link"
+          "pdfUrl": "https://drive.google.com/file/d/1ATisMXHHoM2W41E-hFVSY7EvM3_-ijys/view?usp=drive_link"
         },
         {
           "id": "m2-notes-eduno-4",
@@ -117,7 +117,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           "department": "Basic Science",
           "semester": 2,
           "fileType": "PDF",
-          "pdfUrl": "https://drive.google.com/file/d/1hEr6VmYS0kQ4YbDUVldbLxYJ2rdPPlVk/view?usp=drive_link"
+          "pdfUrl": "https://drive.google.com/file/d/1w2DKLj2XyjOQ4NXvITPPMJ40T82BTVOm/view?usp=drive_link"
         },
         {
           "id": "m2-notes-eduno-5",
@@ -128,7 +128,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           "department": "Basic Science",
           "semester": 2,
           "fileType": "PDF",
-          "pdfUrl": "https://drive.google.com/file/d/1a_uXbVuo0pJ2a7e-oHRQg7bu6nKlm3UY/view?usp=drive_link"
+          "pdfUrl": "https://drive.google.com/file/d/1-rVQrcUfcJrCPhAL9aRViBy1xsuC8FxQ/view?usp=drive_link"
         }
       ]
       
