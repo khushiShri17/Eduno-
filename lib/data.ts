@@ -515,7 +515,116 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLEYBvmdYQH_b3GqXdz2Z377qWNUTOQPCC&si=zL9nmjDNyDkfQQF5"
       }
     ],
-    important: [],
+    important: [
+      {
+        unit: 0,
+        title: "Most Important in M II",
+        topics: [
+          "phase and group velocities",
+          "eisenberg's uncertainty principle",
+          "Schodinger wave equation",
+          "Newton's ring numerical",
+          "Fermi Level Shifting",
+          "Properties, Applications of Laser",
+          "Numeriacal of numerical aperture and acceptance angle",
+          "Gradient of a scalar field, divergence of a vector field",
+          "Equation of continuity"
+
+        ],
+        questions: [
+          'Just Do All PYQs'
+        ]
+      },
+      {
+        unit: 1,
+        title: "Wave Nature of Particles and the Schrodinger Equation",
+        topics: [
+          'Schrödinger wave equation',
+          'uncertainty principle',
+          'energy and momentum operator',
+          'one-dimensional motion of a particle in a box ',
+          "Heisenberg's uncertainty principle",
+          'phase and group velocities'
+
+        ],
+        questions: [
+          'Derive time dependent and time independent Schrodinger wave equation.',
+          'Deduce the relation between phase (Vp) and group (Vg) velocities.',
+          'Discuss the energy and momentum operator',
+          "State and prove (Elementary proof) Heisenberg's uncertainty principle.",
+          'Prove that for one-dimensional motion of a particle in a box ψn = A sin (ηπχ/L).'
+        ]
+      },
+      {
+        unit: 2,
+        title: "Wave Optics",
+        topics: [
+          "Michelson's interferometer experiment",
+          "Newton's Ring Numeriacal",
+          "Rayleigh's criteria",
+          "Mach-Zehnder interferometer",
+          "Phase & Path Difference",
+        ],
+        questions: [
+          "Explain the Michelson's interferometer experiment on the basis of labelled diagram and types of fringes.",
+          "In Newton's Ring method, the diameter of nth and (n+14)th ring are 0.42 cm and 0.70 cm respectively. If the radius of curvature of plano convex lens is 100 cm, calculate the wavelength of light.",
+          "Explain the Rayleigh's criteria for resolving power.",
+          "Discuss the Young's double slit experiment on the basis of labelled diagram, formula used, and significance."
+
+        ]
+      },
+      {
+        unit: 3,
+        title: "Introduction to Solids",
+        topics: [
+          "Fermi level shifting",
+          "Bloch Theorem",
+          " Zener & P-N Junction diode",
+          "Hall effect",
+
+
+        ],
+        questions: [
+          "Explain the Fermi level shifting in semiconductors.",
+          "Draw and explain the V-I characteristic curve of P-N junction diode. Differentiate between Avalanche and Zener breakdown.",
+          "State and prove Bloch Theorem.",
+          "Explain Hall effect. Derive expression for Hall coefficient and Hall angle.",
+        ]
+      },
+      {
+        unit: 4,
+        title: "Lasers",
+        topics: [
+          "Properties, Applications of Laser",
+          "Optical fibre & Total Internal Reflection",
+          'Numeriacal of numerical aperture and acceptance angle',
+          "Types of Laser (Specially He-Ne Laser",
+
+        ],
+        questions: [
+          "Explain the properties & applications of LASER.",
+          "Discuss the working of He-Ne Laser with labelled diagram.",
+          "(Refer More Numericals in PYQs) Calculate the numerical aperture and acceptance angle for an optical fiber, given that the refractive indices of the core and the cladding are 1.45 and 1.41, respectively.",
+          "hat is the working principle of an optical fibre? How light propagates through it? Define terms: Numerical aperture, Population inversion, V-number.",
+        ]
+      },
+      {
+        unit: 5,
+        title: "Electrostatics in Vacuum",
+        topics: [
+          "Gradient of a scalar field, divergence of a vector field.",
+          "Maxwell's equation",
+          "Stoke's Theorem",
+          "Equation of continuity",
+        ],
+        questions: [
+          "Define gradient of a scalar field and divergence of a vector field.",
+          "State and explain Maxwell's equation in vacuum and non-conducting medium.",
+          "State and prove Stoke's Theorem.",
+          "State and prove equation of continuity. Explain its significance.",
+        ]
+      }
+    ],
     syllabus: [
       {
         "unit": 1,
@@ -865,7 +974,98 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLbkIghvjQ7P-UXDAn1vA69Fl2nxdicusP&si=QELtA84XJgYXXag_"
       }
     ],
-    important: [],
+    important: [
+      {
+        unit: 0,
+        title: "Most Important of EEEs",  
+        topics: [
+          'Hydro electric power plants',
+          'Food Chain & Its types',
+          'Biodiversity',
+          'Smog',
+          'All Acts (in unit 4)',
+          'Primary goals of sustainability'
+        ],
+        questions:['Just Do All PYQs']
+      },
+      {
+        unit: 1,
+        title: "Inoroduction to Energy Science",
+        topics: [
+          "Hydro electric power plants",
+          "Energy system",
+          "Single-basin & Double-basin tidal power plants",
+          'Fossil Fuel'
+        ],
+        questions: [
+          "Give the classification of hydro-electric power plant. What are the criteria of site selection for hydroelectric plant?",
+          "Differentiate between single-basin and double-basin tidal plants. Explain briefly the various components of tidal power plants.",
+          "How can our energy system be more Earth-friendly?"
+        ]
+      },
+      {
+        unit: 2,
+        title: "Ecosystems",
+        topics: [
+          "Food Chain & Its Types",
+          'Aquatic Ecosystem',
+          'Ecological Pyramid'
+
+        ],
+        questions: [
+          'What is Food Chain? Explain various types of food chains.',
+          'Explain Aquatic Ecosystem.',
+          'What is Ecological Pyramid?'
+        ]
+      },
+      {
+        unit: 3,
+        title: "Biodiversity and its Conservation",
+        topics: [
+          'Biodiversity',
+          
+        ],
+        questions: [
+          'What is Biodiversity? What are the major factors responsible for the loss of genetic biodiversity? How can biodiversity be conserved?',
+          'Discuss about the different kinds of diversity in organisms. Write in detail about conservation of biodiversity'
+        ]
+      },
+      {
+        unit: 4,
+        title: "Environmental Pollution",
+        topics: [
+          'Air pollution & Water Pollution',
+          'Smog',
+          'Solid Waste',
+          'Soil Pollution',
+          'Wildlife Protection Act',
+          'Forest Conservation Act'
+        ],
+        questions: [
+          'Which gas does not cause Air pollution? Who had coined the term SMOG?',
+          'Explain the term Solid waste. What are adverse effects of solid wastes in society? Discuss various methods for disposal of solid wastes.',
+          'Explain Water pollution. Enlist various sources of water pollution giving their adverse effects. How water pollution can be minimized?'
+        ]
+      },
+      {
+        unit: 5,
+        title: "Social Issues and the Environment",
+        topics: [
+          'Green Building',
+          'Ozone Layer',
+          'Primary Goals Of Sustainability',
+          'Resettlement and rehabilitation',
+          'Acid Rain & Ozone Layer Depletion'
+
+        ],
+        questions: [
+          'What do you understand by concept of Green building? Explain.',
+          'Write a brief note on Resettlement and rehabilitation of people:',
+          'What are the Primary Goals of Sustainability?',
+          'Write short note on Ozone Layer Depletion, Acid Rain and Global Warming.'
+        ]
+      }
+    ],
     syllabus: [
       {
         "unit": 1,
