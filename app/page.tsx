@@ -38,7 +38,7 @@ export default function Home() {
       role: "Notes Provider"
     },
     {
-      name: "Arpita",
+      name: "Arpita Khandelwal",
       department: "Information Technology",
       year: "2023-2027",
       role: "Notes Provider"

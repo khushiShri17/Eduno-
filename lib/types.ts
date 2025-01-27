@@ -27,7 +27,11 @@ export interface ContentResource extends BaseResource {
   uploadedBy: string;
   uploadedOn: string;
 }
-
+export interface Important extends BaseResource {
+  unit: number;
+  title: string;
+  topics: string[];
+}
 export interface SyllabusUnit {
   unit: number;
   title: string;
@@ -44,7 +48,7 @@ export interface SubjectResources {
     unitWise: UnitWisePYQ[];
   };
   content: ContentResource[];
-  important: ContentResource[];
+  important: Important[];
   syllabus: SyllabusUnit[];
 }
 

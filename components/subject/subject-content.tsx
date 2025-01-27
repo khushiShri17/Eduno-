@@ -127,7 +127,7 @@ export default function SubjectContent({
 
         <TabsContent value="important">
           {resources.important.length > 0 ? (
-            <ResourceSection resources={resources.important} />
+            <SyllabusSection units={resources.important} />
           ) : (
             <WorkInProgress />
           )}
