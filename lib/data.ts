@@ -256,7 +256,99 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLU6SqdYcYsfKqa52m3wyMZb1KVWuZsA2T&si=yGc88IwI0KCQMIe1"
       }
     ],
-    important: [],
+    important: [
+      {
+        unit: 0,
+        title: "IMP of M-2",
+        topics: [
+          "Exact Method",
+          "Bessel Functions",
+          "Variation of Parameters",
+          "Linear PDEs",
+          "Line Integral",
+          "Gauss Divergence Theorem",
+          "Green's Theorem",
+        ],
+        questions: [
+          "Just Do All PYQs",
+        ]
+      },
+      {
+        unit: 1,
+        title: "Ordinary Differential Equations I",
+        topics: [
+          "Leibnitz Linear & Exact Method (Ordinary Differential Equations of First Order and First Degree)",
+          "Ordinary Differential Equations of First Order and Higher Degree",
+          "Higher Order Differential Equations with Constant Coefficients"
+
+        ],
+        questions: [
+          "(x e^(xy) + 2y) dy/dx + y e^(xy) = 0 → Exact Method",
+          "Solve (1 + y²)dx = (tan⁻¹y - x)dy using Leibnitz linear method",
+          "Solve: dy/dx = cos(x + y) + sin(x + y)",
+          "Solve: (e^y + 1)cosx dx + e^y sinx dy = 0",
+          " Solve: d²y/dx² + dy/dx = (1 + e^x)⁻¹",
+        ]
+      },
+      {
+        unit: 2,
+        title: "Ordinary Differential Equations II",
+        topics: [
+          "Bessel Functions of the First Kind and Their Properties",
+          "Variation of Parameters",
+
+        ],
+        questions: [
+          "J1/2(x)=2xsinx (Bessel Function)",
+          "(D^2+9)y=tan3x (Variation of Parameters)",
+        ]
+      },
+      {
+        unit: 3,
+        title: "Partial Differential Equations",
+        topics: [
+          "Linear PDEs",
+          "Homogeneous Linear PDEs (Constant Coefficients)",
+          "Charpit's Method",
+        ],
+        questions: [
+          "(x−y)p+(x+y)q=2xz (Linear PDE)",
+          "D^2−DD′−6D′^2)Z=xy (Linear PDE)",
+          "(D^2 +4DD′−5D′^2)Z=sin(2x+3y) (Homogeneous Linear PDE)",
+          "(p^2+q^2)y=qz (charpit's Method)",
+        ]
+      },
+      {
+        unit: 4,
+        title: "Functions of Complex Variables",
+        topics: [
+        "Harmonic functions",
+        "Analytic functions",
+        "Line Integral",
+        "Singularity & Residues",
+        ],
+        questions: [
+          "Check PYQs for Questions (Can't show up equations here)",
+        ]
+      },
+      {
+        unit: 5,
+        title: "Vector Calculus",
+        topics: [
+          "Green's Theorem",
+          "Directional Derivative",
+          "Curl & Laplacian Operator",
+          "Gauss Divergence Theorem",
+        ],
+        questions: [
+          "Check PYQs for Questions (Can't show up equations here)",
+          "Verify Green's theorem in the plane forC(x^2-xy^3)dx+(y^2-2xy)dy where C is a square with vertices (0, 0), (2, 0), (2, 2), (0, 2)",
+          "Find the directional derivative of f(x,y,z)=e2x cos yz at (0, 0, 0) in the direction of the tangent to the curve x=asint, y = acost, z = at at t =4",
+
+
+        ]
+      }
+    ],
     syllabus: [
       {
         "unit": 1,
@@ -518,7 +610,7 @@ export const subjectResources: Record<string, SubjectResources> = {
     important: [
       {
         unit: 0,
-        title: "Most Important in M II",
+        title: "Most Important in Physics",
         topics: [
           "phase and group velocities",
           "eisenberg's uncertainty principle",
