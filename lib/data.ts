@@ -1493,7 +1493,96 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLU6SqdYcYsfJ27O0dvuMwafS3X8CecqUg&si=N1KwYQ7KqouAsZRf"
       }
     ],
-    important: [],
+    important: [
+      {
+        unit: 0,
+        title: "Most Important of Discrete Mathematics",
+        topics: [
+          "Inverse function",
+          "Groups basics",
+          "Tautology & Symbols",
+          "Euler Graph",
+          "Hasse Diagram",
+        ],
+        questions: ['Just Do All PYQs']
+      },
+      {
+        unit: 1,
+        title: "Set Theory",
+        topics: [
+          "Inverse function",
+          "Equivalence relation",
+          "Basic Questions on set with venn diagram",
+          "Mathematical induction"
+        ],
+        questions: [
+          "Illustrate the concept of an inverse function. Let f: Z → Z be such that f(x) = x + 1. Is it invertible? If it is, then what is its inverse?",
+          "Show that 12+22+32+....+n2=n(n+1)(2n+1)6, n ≥ 1 by mathematical induction.",
+          "Prove that 52n-1 is divisible by 24, where n is any positive integer",
+        ]
+      },
+      {
+        unit: 2,
+        title: "Algebric Structures",
+        topics: [
+          "Abeilian group",
+          "Normal subgroup",
+          "Basics of Group",
+          "Field and Ring (Specially Field)"
+        ],
+        questions: [
+          "Let Z be the group of integers with binary operation * defined by ab = a+b-2, for all a,b ∈ Z. Find the identity element of the group <Z,*>",
+          "Prove or disprove that the intersection of two normal subgroups of a group G is again a normal subgroup of G. Define subgroup, normal subgroup, quotient group, with an example for each",
+          "Define group. Explain the properties of groups."
+        ]
+      },
+      {
+        unit: 3,
+        title: " Propositional Logic",
+        topics: [
+          "Basic of all signs in propositional logic (Truth table)",
+          "Proof of Tautology",
+          "Pigeonhole principle"
+          
+        ],
+        questions: [
+          "Write the negation of the following: i) If the determinant of a system of linear equations is zero, then either the system has no solution or has an indefinite number of solutions. ii) Either today is not a Sunday or today is not a Wednesday.",
+          'Define Pigeonhole Principle. Write the contrapositive of the implication: "if it is Sunday then it is a holiday."',
+          "Show that the proposition ~ (p ^ q) and ~ p v q are logically equivalent."
+
+        ]
+      },
+      {
+        unit: 4,
+        title: "Theorem Proving Techniques",
+        topics: [
+          "Euler Graph",
+          "Planar Graph",
+          "Graph Coloring",
+          "isomorphic graph"
+        ],
+        questions: [
+          "Determine whether the graphs F1 and F2 are isomorphic.(Diagram in PYQ)",
+          "Define planar graph. Prove that for any connected planar graph, v - e + r = 2 where v, e, r are the number of vertices, edges, and regions of the graph respectively.",
+          "Explain the following: i) Euler Graph ii) Isomorphic graphs iii) Minimal spanning tree iv) Height of the tree",
+          "Consider the complete weighted graph G in the following figure with 5 vertices. Find a Hamiltonian circuit of minimal weight (Diagram in PYQ)"
+        ]
+      },
+      {
+        unit: 5,
+        title: "Posets, Hasse Diagram and Lattices",
+        topics: [
+          "Hasse Diagram",
+          "Lattices (Specialy isomorphic lattice)",
+          "Recurrence Relation and Generating Function"
+        ],
+        questions: [
+          "Let A be any finite set and P(A) be the power set of A ⊆. Draw the Hasse diagrams of (P(A), ⊆) for the following: i) A={a} ii) A={a, b} iii) A={a, b, c} iv) A={a, b, c, d}",
+          "Draw the Hasse diagram representing the positive divisors of 36 and 45.",
+          "Consider the set A = {4, 5, 6, 7}. Let R be the relation ≤ on A. Draw the directed graph and the Hasse diagram of R."
+        ]
+      }
+    ],
     syllabus: [
       {
         "unit": 1,
