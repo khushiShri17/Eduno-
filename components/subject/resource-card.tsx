@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Video } from "lucide-react";
+import { FileText, Video, Crown } from "lucide-react";
 import PDFViewerModal from "./pdf-viewer-modal";
 import { Note, YearWisePYQ, UnitWisePYQ, ContentResource } from "@/lib/types";
 
@@ -50,12 +50,27 @@ export default function ResourceCard({ resource }: { resource: ResourceType }) {
     <>
       <Card 
         className={`${(resource.pdfUrl || 'videoUrl' in resource) ? 'cursor-pointer' : ''} 
-          transition-all duration-300 group ${bgColor} border-none
+          transition-all duration-300 group ${bgColor} border-none relative
           hover-lift card-hover animate-fade-in`}
         onClick={handleClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
+        {/* Exclusive Tag */}
+        {resource.isExclusive && (
+          <div className="absolute -top-2 -right-2 z-10">
+            <div className="relative">
+              {/* Glow effect */}
+              <div className="absolute inset-0 rounded-full blur-sm bg-yellow-400/50 dark:bg-yellow-500/50 animate-pulse"></div>
+              {/* Tag content */}
+              <div className="relative flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-yellow-400 to-amber-500 dark:from-yellow-500 dark:to-amber-600 rounded-full shadow-lg">
+                <Crown className="h-3 w-3 text-white" />
+                <span className="text-[10px] font-bold text-white uppercase tracking-wider">Exclusive</span>
+              </div>
+            </div>   
+          </div>
+        )}
+
         <div className={`absolute top-4 right-4 transition-transform duration-300 ${isHovered ? 'scale-110' : ''}`}>
           {resource.fileType === 'PDF' ? (
             <FileText className="h-6 w-6 text-muted-foreground/50" />

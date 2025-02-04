@@ -8,6 +8,7 @@ export interface BaseResource {
   fileType: string;
   pdfUrl?: string;
   videoUrl?: string;
+  isExclusive?: boolean;
 }
 
 export interface Note extends BaseResource {

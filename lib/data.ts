@@ -71,10 +71,24 @@ export const subjectResources: Record<string, SubjectResources> = {
           "department": "Basic Science",
           "semester": 2,
           "fileType": "PDF",
-          "pdfUrl": "https://drive.google.com/file/d/1gsUcEtnCgzF2xdT94SVCSP1Pg2LsZxiV/view?usp=drive_link"
+          "pdfUrl": "https://drive.google.com/file/d/1gsUcEtnCgzF2xdT94SVCSP1Pg2LsZxiV/view?usp=drive_link",
+          
         }
       ],
       college: [
+        {
+          id: "m2-notes-eduno-0",
+          title: "Short Revision Notes (Must Refer)",
+          contributor: "Eduno Team",
+          subjectCode: "BT 202",
+          subjectName: "Mathematics-II",
+          department: "Basic Science",
+          semester: 2,
+          fileType: "PDF",
+          pdfUrl: "https://drive.google.com/file/d/1AMcDjvk8Qki95Cph4_7zred6sA-3AzTi/view?usp=sharing",
+          isExclusive: true
+
+        },
         {
           "id": "m2-notes-eduno-1",
           "title": "Unit 1 - M2",
