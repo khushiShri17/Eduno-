@@ -1859,7 +1859,106 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtu.be/J0OvDNmAWNw?si=IRPt2Jmw_6htKS0R"
       }
     ],
-    important: [],
+    important: [
+      {
+        unit: 0,
+        title: "IMP of Data Structure",
+        topics: [
+          "Data Structure and Types",
+          "Asymptotic Analysis",
+          "L-L, L-R, and R-R rotations",
+          "Preorder, Postorder, and Breadth-First traversal",
+          "Linked Lists , Operation performed and it's types",
+          "Circular linked list",
+          "Stack, Operations of stack and it's applications",
+          "Infix expression to a prefix expression",
+          "Quick sort",
+          "Binary search",
+          "Circular queue"
+        ],
+        questions: [
+          "Just Do All PYQs",
+        ]
+      },
+
+      {
+        unit: 1,
+        title: " Introduction to Data Structures",
+        topics: [
+          "Data Structure and Types",
+          "Time and Space complexity",
+          "Asymptotic Analysis"
+        ],
+        questions: [
+          "What is data structure? Explain primitive and non-primitive data structure in detail.",
+          "What is time and space complexity? Describe complexity in worst case, best case, and average case with a suitable example.",
+          `What is asymptotic analysis? Explain Big-oh notation. Analyse and write the running time complexity of the given function. A(){ int i, j, k, n; for(i=1; i<=n; i++) for(j=1; j<=n; j++) for(k=1; 2k<=n; k++) printf  ("*");}`
+        ]
+      },
+      {
+        unit: 2,
+        title: "Arrays & Structures",
+        topics: [
+          "Array and it's types",
+          "Binary search",
+          "Quick sort",
+          "Fibonacci Search",
+
+        ],
+        questions: [
+          "What is array? Explain memory representation of a two-dimensional array in computer memory.",
+          "What is Binary search? Write an algorithm to find an element in an array using Binary search. Calculate the time complexity of Binary search.",
+          "What is quick sort? Write an algorithm of quick sort to sort the list of numbers in ascending order. Also, calculate its complexity.",
+          "Write short notes c) Fibonacci Search"
+        ]
+      },
+  
+      {
+        unit: 3,
+        title: " Stacks & Queues",
+        topics: [
+          "Stack, Operations of stack and it's applications",
+          "Infix expression to a prefix expression",
+          "Tower of Hanoi problem",
+          "Queue",
+          "Circular queue"
+        ],
+        questions: [
+          "What is stack? Write the algorithm of PUSH and POP operations and explain with a suitable example.",
+          "Write an algorithm for converting an infix expression to a prefix expression. Convert the following expression into prefix notation: ((A-B/C)*(D*E-F)).",
+          "What is the Tower of Hanoi problem? Explain with a suitable example. Write an algorithm to implement the Tower of Hanoi problem.",
+          "Describe the queue with a suitable example. Write an algorithm to insert an element into the queue.",
+          "What is the advantage of a circular queue over an ordinary queue? Write a C program to simulate a circular queue.  "
+        ]
+      },
+      {
+        unit: 4,
+        title: "Linked Lists",
+        topics: [
+        "Linked Lists , Operation performed and it's types",
+        "Circular linked list",
+        ],
+        questions: [
+          "What is a linked list? Explain the memory representation of a linked list.",
+          "What is a circular linked list? Describe the following in detail: i) Singly circular linked list ii) Circular linked list with header node iii) Doubly circular linked list.",
+          "List and explain the basic operations that can be performed on a linked list."
+        ]
+      },
+      {
+        unit: 5,
+        title: "Trees & Graphs",
+        topics: [
+          "L-L, L-R, and R-R rotations",
+          "Preorder, Postorder, and Breadth-First traversal",
+          "Graph traversal"
+        ],
+        questions: [
+          "What are L-L, L-R, and R-R rotations? Write the procedure for adding and deleting a node from a balanced tree",
+          "What is the sequence of nodes visited for preorder, postorder, and breadth-first traversal?",
+          "What is Graph traversal? Discuss the difference between traversing a graph and a tree.",
+        ]
+      }
+    ],
     syllabus: [
       {
         "unit": 1,
