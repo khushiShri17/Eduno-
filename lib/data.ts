@@ -2607,7 +2607,104 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtube.com/playlist?list=PLgwJf8NK-2e4zRyPzO6HI9sUOR8v-80RT&si=pUb98npFiA2CWIdI"
       }
     ],
-    important: [],
+    important: [
+      {
+        unit: 0,
+        title: "IMP of Digital Circuit System",
+        topics: [
+          "Code converter circuits",
+          "8-to-3 line encoder",
+          "Flip-Flops",
+          "Multivibrators and it's types",
+          "TTL, ECL, and CMOS",
+          "Schmitt Trigger",
+        ],
+        questions: [
+          "Just Do All PYQs",
+        ]
+      },
+
+      {
+        unit: 1,
+        title: "Number Systems and Logic Gates",
+        topics: [
+          "Code converter circuits",
+          "Gates- AND, OR, and NOT ",
+        ],
+        questions: [
+          "What do you mean by code converter circuits? Design a BCD to Excess-3 code converter circuit.",
+          "Draw AND, OR, and NOT gates using NOR gate only",
+          `F = AB + C + DE, implement this function with NOR gates`,
+          `Convert the following numbers to their equivalent in indicated bases:
+              i) (5321)6= ( )н
+              ii) (178)9 = ( )6
+              iii) (123)8= ( )10`,
+            `Simplify the following Boolean functions to minimum no. of literals:
+                i) x'y' + xy + x'y
+                ii) X = (A + B)(A + C)`
+        ]
+      },
+      {
+        unit: 2,
+        title: "Combinational Circuits",
+        topics: [
+          "Digital multiplexer",
+          "Decoders and Encoders",
+          "8-to-3 line encoder",
+          "Adder",
+
+        ],
+        questions: [
+          "What is a digital multiplexer? Implement a Boolean function F(A, B, C) = Σ(1, 3, 5, 6) with a digital multiplexer.",
+          "Write short notes on :  Decoders and Encoders",
+          "Draw the logic diagram of an 8-to-3 line encoder. Explain its operation using a truth table.",
+          "Implement a full adder using a decoder and NAND gates only. The inputs to the adder are 'A', 'B', and 'C', and the outputs are 'S' and 'Cout'.",
+          "How is carry look-ahead adder faster than a ripple carry adder? Explain"
+        ]
+      },
+  
+      {
+        unit: 3,
+        title: "Sequential Circuits",
+        topics: [
+          "Flip-Flops",
+        ],
+        questions: [
+          "Draw D flip flop, write truth table, excitation table, and characteristic equations.",
+          "Design and draw a Mod-6 counter using JK flip-flops.",
+          "Design D-Flip-Flop using SR-Flip-Flop. Differentiate between truth table and excitation table",
+        ]
+      },
+      {
+        unit: 4,
+        title: "Digital Logic Families",
+        topics: [
+        "TTL, ECL, and CMOS",
+        "Schmitt Trigger",
+        "PROM"
+        ],
+        questions: [
+          "Define the terms Fan-in, Fan-out, and figure of merit related to digital logic families. Compare TTL, ECL, and CMOS on the basis of these parameters.",
+          "Write short notes on Schmitt Trigger",
+          "Explain Memory Decoding. Compare the PROM with EPROM"
+        ]
+      },
+      {
+        unit: 5,
+        title: "Clocks and Timing Circuits",
+        topics: [
+          "Multivibrators and it's types",
+          "Analog to Digital converter ",
+          "LED display"
+        ],
+        questions: [
+          "Define astable, monostable, and bistable multivibrators. Draw circuit diagram of monostable multivibrator and explain its operation.",
+          "Draw successive approximation analog to digital converter and explain its working in detail.",
+          "Explain the operation of a Successive-Approximation type of Analog-to-digital converter.",
+          `Write short notes on 7 and 16 segment LED display`
+        ]
+      }
+    ],
     syllabus: [
       {
         "unit": 1,
