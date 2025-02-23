@@ -1,6 +1,8 @@
 import type { SubjectResources } from "./types";
 
 export const subjects = [
+  //1st semester
+  { id: "bce", name: "Basic Computer Engineering " },
   // 2nd Semester
   { id: "m2", name: "Mathematics-II" },
   { id: "ep", name: "Engineering Physics" },
@@ -14,6 +16,194 @@ export const subjects = [
 ];
 
 export const subjectResources: Record<string, SubjectResources> = {
+  // 1st Semester Subject
+  "bce": {
+    notes: {
+      rgpv: [{
+
+          "id": "bce-notes-rgpv-1",
+          "title": "Unit 1 - BCE",
+          "contributor": "RGPV Notes",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering ",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1TtcWnkxoCmKs8wJYplVYUsSmANv3RlOA/view?usp=drive_link"
+        },
+        {
+          "id": "bce-notes-rgpv-2",
+          "title": "Unit 2 - BCE",
+          "contributor": "RGPV Notes",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering ",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1KyA0szgqZGJQOwkb2IWkt1bnhyeY0dD6/view?usp=drive_link"
+        },
+        {
+          "id": "bce-notes-rgpv-3",
+          "title": "Unit 3 - BCE",
+          "contributor": "RGPV Notes",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering ",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1YYKHbB_HmIIk7sG16-jW62lsDFv4_tKO/view?usp=drive_link"
+        },
+        {
+          "id": "bce-notes-rgpv-4",
+          "title": "Unit 4 - BCE",
+          "contributor": "RGPV Notes",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering ",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/13ChKxae2Jao_qi2lLGGK_Jb66g4DKHlN/view?usp=drive_link"
+        },
+        {
+          "id": "bce-notes-rgpv-5",
+          "title": "Unit 5 - BCE",
+          "contributor": "RGPV Notes",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering ",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1JuEjWKrOrNnVW0OP8Bb01-pN3A0LwjgP/view?usp=drive_link"
+          
+        }
+      ],
+      college: [
+        
+        {
+          "id": "bce-notes-eduno-1",
+          "title": "Unit 1 -BCE",
+          "contributor": "Eduno Team",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1DYTUe3VQx51fkpDozCiOnafpjMFo7-yx/view?usp=drive_link"
+        },
+        {
+         "id": "bce-notes-eduno-1",
+          "title": "Unit 2 -BCE",
+          "contributor": "Eduno Team",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1mmvevefSJD-V7iZ03FOP9D0FjlS9v5Sl/view?usp=drive_link"
+        },
+        {
+          "id": "bce-notes-eduno-1",
+          "title": "Unit 3 -BCE",
+          "contributor": "Eduno Team",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1z6Tim9BpNXNzpfssQOoOfYEu5yb6xXFn/view?usp=drive_link"
+        },
+        {
+         "id": "bce-notes-eduno-1",
+          "title": "Unit 4 -BCE",
+          "contributor": "Eduno Team",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/15yHrg7PBLCEEroJ0IXVX4aavyajjud2Z/view?usp=drive_link"
+        },
+        {
+          "id": "bce-notes-eduno-1",
+          "title": "Unit 5 -BCE",
+          "contributor": "Eduno Team",
+          "subjectCode": "BT-205",
+          "subjectName": "Basic Computer Engineering",
+          "department": "Basic Science",
+          "semester": 1,
+          "fileType": "PDF",
+          "pdfUrl": "https://drive.google.com/file/d/1p-Uv9K-fLJCBMs3jxSC10QTuK4s8arD3/view?usp=drive_link",
+        }
+      ]
+    },
+    pyq: {
+      yearWise: [
+        
+      ],
+      unitWise: [
+       
+      ]
+      
+    },
+    content: [
+     
+    ],
+    important: [
+   
+    ],
+    syllabus: [
+      {
+        "unit": 1,
+        "title": "Computer",
+        "topics": [
+          "Definition, Classification, Organization i.e. CPU, register, Bus architecture, Instruction set, Memory & Storage Systems",
+          " I/O Devices, and System & Application Software. Computer Application in eBusiness, Bio-Informatics, health Care",
+          "Remote Sensing & GIS, Meteorology and Climatology, Computer Gaming, Multimedia and Animation etc.",
+          "Operating System: Definition, Function, Types, Management of File, Process & Memory. Introduction to MS word, MS powerpoint, MS Excel",
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Introduction to Algorithms",
+        "topics": [
+          "Complexities and Flowchart, Introduction to Programming, Categories of Programming Languages, Program Design, Programming Paradigms",
+          " Characteristics or Concepts of OOP, Procedure Oriented Programming VS object oriented Programming",
+          "Introduction to C++: Character Set, Tokens, Precedence and Associativity, Program Structure, Data Types",
+          " Variables, Operators, Expressions, Statements and control structures, I/O operations, Array, Functions",
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Object & Classes",
+        "topics": [
+          "Scope Resolution Operator, Constructors & Destructors, Friend Functions, Inheritance, Polymorphism ",
+          "Overloading Functions & Operators, Types of Inheritance, Virtual functions,Introduction to Data Structures",
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Computer Networking",
+        "topics": [
+          "Introduction, Goals, ISO-OSI Model, Functions of Different Layers. Internetworking Concepts, Devices, TCP/IP Model.",
+          "Introduction to Internet, World Wide Web, E-commerce Computer Security Basics: Introduction to viruses",
+          "worms, malware, Trojans, Spyware and Anti-Spyware Software, Different types of attacks like Money Laundering",
+          " Information Theft, Cyber Pornography, Email spoofing, Denial of Service (DoS), Cyber Stalking, ,Logic bombs",
+          "Hacking Spamming, Cyber Defamation , pharming Security measures Firewall,",
+          "Computer Ethics & Good Practices, Introduction of Cyber Laws about Internet Fraud, Good Computer Security Habits",
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Data base Management System",
+        "topics": [
+          "Introduction, File oriented approach and Database approach, Data Models, Architecture of Database System",
+          "Data independence, Data dictionary, DBA, Primary Key, Data definition language and Manipulation Languages.",
+          "Cloud computing: definition, cloud infrastructure, cloud segments or service delivery models (IaaS, PaaS and SaaS)",
+          "Cloud deployment models/ types of cloud (public, private, community and hybrid clouds), Pros and Cons of cloud computing",
+        ]
+      }
+    ]
+  },
   // 2nd Semester Subjects
   "m2": {
     notes: {
@@ -145,7 +335,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           "pdfUrl": "https://drive.google.com/file/d/1-rVQrcUfcJrCPhAL9aRViBy1xsuC8FxQ/view?usp=drive_link"
         }
       ]
-      
+    
     },
     pyq: {
       yearWise: [

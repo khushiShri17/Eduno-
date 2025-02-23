@@ -8,7 +8,17 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 // Get subjects based on semester
 const getSubjects = (branch: string, semester: number) => {
-  if (semester === 2) {
+  if(semester === 1){
+    return [
+      {
+        id: "bce",
+        name: "Basic Computer Engineering ",
+        code: "BT-205",
+        image: "https://images.unsplash.com/photo-1548393488-ae8f117cbc1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3MlMjBhbmQlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"
+      },
+    ];
+  }
+  else if (semester === 2) {
     return [
       {
         id: "m2",
