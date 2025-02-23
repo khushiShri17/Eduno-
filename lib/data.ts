@@ -2293,6 +2293,7 @@ export const subjectResources: Record<string, SubjectResources> = {
         "semester": 3,
         "fileType": "PDF",
         "pdfUrl": "https://drive.google.com/file/d/1p-6QIgy6Nod6-2FXGcqiG1vlrDgeT3Ks/view?usp=drive_link"
+        
       },
       {
         "id": "oopm-notes-eduno-3",
