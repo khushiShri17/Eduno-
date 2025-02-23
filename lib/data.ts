@@ -2472,7 +2472,106 @@ export const subjectResources: Record<string, SubjectResources> = {
         "videoUrl": "https://youtu.be/mlIUKyZIUUU?si=S9ht-M_a2c4OovZw"
       }
     ],
-    important: [],
+    important: [
+      {
+        unit: 0,
+        title: "IMPs of OOPM",
+        topics: [
+          "Features & Characterstics of OOPM",
+          "Abstract Class",
+          "Structure in C++",
+          "base and derived class (Inheritance & its types)",
+          "Virtual Function, friend function",
+          "Overloading and Overidding",
+          "New and Delete keywords",
+          "Try catch throw",
+
+        ],
+        questions: [
+          "Just Do All PYQs",
+        ]
+      },
+
+      {
+        unit: 1,
+        title: " Introduction to Object-Oriented Programming",
+        topics: [
+          "Features & Characterstics of OOPM",
+          "Difference between OOP and POP",
+        ],
+        questions: [
+          "CHECK UNIT WISE PYQs (for better understanding)",
+          "What is the main conceptual difference between object-oriented programming and other procedural oriented programming?",
+          "What are the different features of Object-Oriented programming? How is C++ different from C language?",
+
+          
+        ]
+      },
+      {
+        unit: 2,
+        title: "Objects and Classes",
+        topics: [
+          "Constructor & its types",
+          "Basics of Classes and Objects (implementation from code)",
+          "Structure in C++",
+          "Abstract Class",
+          "(!IMPORTANT) Do all programs given in unit wise pyqs"
+
+        ],
+        questions: [
+          "Explain the concept of class and structure in C++. Write the main differences between class and structure.",
+          "How structures are different from classes? Illustrate it with a program.",
+          "Differentiate among the following with an example: i) Abstract and non-abstract classes ii) Runtime and compile-time polymorphism",
+
+          
+        ]
+      },
+  
+      {
+        unit: 3,
+        title: " Stacks & Queues",
+        topics: [
+          "Inheritance & It's types (with code)",
+          "Code for base and derived class (Inheritance)",
+        ],
+        questions: [
+            "Explain with examples of different types of inheritance. Why can multiple inheritance induce complexity in the program?",
+            "Explain in detail about Binary Operator Overloading with an example program.",
+            "What are base and derived classes? Write a program to use these classes.",
+            "What is the ambiguity that arises in multiple inheritance? How it can be overcome? Explain with example.",
+
+        ]
+      },
+      {
+        unit: 4,
+        title: "Linked Lists",
+        topics: [
+          "Virtual Function, friend function, Static function, friend class",
+          "New and Delete keywords",
+          "Overloading and Overidding (with code)",
+          "Operator Overloading",
+        ],
+        questions: [
+         "Discuss the following functions: i) Virtual functions ii) Pure functions iii) Friend functions iv) Static functions",
+         "What is the difference between overloading and overriding? How is binding used in polymorphism? Explain with example.",
+         
+        ]
+      },
+      {
+        unit: 5,
+        title: "Trees & Graphs",
+        topics: [
+            "Error handling (try catch throw wih code)",
+            "File Input Output (code)",
+            "Class Templates",
+            
+        ],
+        questions: [
+          "What is error handling? Write a program to explain error handling in C++.",
+          "Explain the following with an example: a) File I/O b) Debugging pointer"
+        ]
+      }
+    ],
     syllabus: [
       {
         "unit": 1,
