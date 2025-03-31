@@ -72,6 +72,7 @@ export default function Footer() {
             <ul className="space-y-1 md:space-y-2">
               <li className="text-xs md:text-sm dark:text-gray-300 break-words">
                 Email: anshmishraa.8708@gmail.com
+                        khushi178shrivastava@gmail.com
               </li>
               <li className="text-xs md:text-sm dark:text-gray-300">
                 Whatsapp Community : 
