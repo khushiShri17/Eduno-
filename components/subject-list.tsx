@@ -67,6 +67,41 @@ const getSubjects = (branch: string, semester: number) => {
       },
     ];
   }
+  else if(semester === 4){
+    return [
+      {
+        id: "m3",
+        name: "Mathematics-III",
+        code: "BT401",
+        image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        id: "coa",
+        name: "Computer Architecture",
+        code: "IT402",
+        image: "https://plus.unsplash.com/premium_vector-1734405737827-1374f9f89818?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        id: "ada",
+        name: "Analysis & Design of Algorithm",
+        code: "IT403",
+        image: "https://images.unsplash.com/photo-1642952469120-eed4b65104be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        id: "dbms",
+        name: "Database Management System",
+        code: "IT404",
+        image: "https://images.unsplash.com/photo-1741958193874-6ef299f6b053?w=500&h=300&fit=crop",
+      },
+      {
+        id: "adc",
+        name: "Analog & Digital Communications",
+        code: "IT405",
+        image: "https://plus.unsplash.com/premium_vector-1711987903052-36a37d18bb6b?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        
+      },
+    ];
+  }
   return [];
 };
 
