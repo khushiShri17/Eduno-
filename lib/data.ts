@@ -3168,7 +3168,7 @@ export const subjectResources: Record<string, SubjectResources> = {
             subjectCode: "M3 301",
             subjectName: "Numerical Methods and Probability Theory",
             department: "Mathematics",
-            semester: 3,
+            semester: 4,
             fileType: "PDF",
             pdfUrl: "https://drive.google.com/file/d/1-CiMEH025cgxJmynE4DvEkjBgYtEzdr0/view?usp=sharing"
           },
@@ -3179,7 +3179,7 @@ export const subjectResources: Record<string, SubjectResources> = {
             subjectCode: "M3 301",
             subjectName: "Numerical Methods and Probability Theory",
             department: "Mathematics",
-            semester: 3,
+            semester: 4,
             fileType: "PDF",
             pdfUrl: "https://drive.google.com/file/d/1ts2aqwlYkPARaxlf_G6IdYLxgD3QynZL/view?usp=sharing"
           },
@@ -3190,7 +3190,7 @@ export const subjectResources: Record<string, SubjectResources> = {
             subjectCode: "M3 301",
             subjectName: "Numerical Methods and Probability Theory",
             department: "Mathematics",
-            semester: 3,
+            semester: 4,
             fileType: "PDF",
             pdfUrl: "https://drive.google.com/file/d/1zxWjTwK0zYnA3uXy3x9zOnhq73GOZ4Ju/view?usp=drive_link"
           },
@@ -3201,7 +3201,7 @@ export const subjectResources: Record<string, SubjectResources> = {
             subjectCode: "M3 301",
             subjectName: "Numerical Methods and Probability Theory",
             department: "Mathematics",
-            semester: 3,
+            semester: 4,
             fileType: "PDF",
             pdfUrl: "https://drive.google.com/file/d/18WYuDPJunyTSpejTdYuaMkRimRzgy6b_/view?usp=drive_link"
           }
@@ -3214,7 +3214,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           //   subjectCode: "M3 301",
           //   subjectName: "Numerical Methods and Probability Theory",
           //   department: "Mathematics",
-          //   semester: 3,
+          //   semester: 4,
           //   fileType: "PDF",
           //   pdfUrl: "https://drive.google.com/file/d/your-link-6/view?usp=drive_link"
           // },
@@ -3225,7 +3225,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           //   subjectCode: "M3 301",
           //   subjectName: "Numerical Methods and Probability Theory",
           //   department: "Mathematics",
-          //   semester: 3,
+          //   semester: 4,
           //   fileType: "PDF",
           //   pdfUrl: "https://drive.google.com/file/d/your-link-7/view?usp=drive_link"
           // },
@@ -3236,7 +3236,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           //   subjectCode: "M3 301",
           //   subjectName: "Numerical Methods and Probability Theory",
           //   department: "Mathematics",
-          //   semester: 3,
+          //   semester: 4,
           //   fileType: "PDF",
           //   pdfUrl: "https://drive.google.com/file/d/your-link-8/view?usp=drive_link"
           // },
@@ -3247,7 +3247,7 @@ export const subjectResources: Record<string, SubjectResources> = {
           //   subjectCode: "M3 301",
           //   subjectName: "Numerical Methods and Probability Theory",
           //   department: "Mathematics",
-          //   semester: 3,
+          //   semester: 4,
           //   fileType: "PDF",
           //   pdfUrl: "https://drive.google.com/file/d/your-link-9/view?usp=drive_link"
           // },
@@ -3258,7 +3258,7 @@ export const subjectResources: Record<string, SubjectResources> = {
             subjectCode: "M3 301",
             subjectName: "Numerical Methods and Probability Theory",
             department: "Mathematics",
-            semester: 3,
+            semester: 4,
             fileType: "PDF",
             pdfUrl: "https://drive.google.com/file/d/14KNLOzcaGHp10RKHS6oD7L1irSUEe_dO/view?usp=sharing"
           },
@@ -3269,7 +3269,7 @@ export const subjectResources: Record<string, SubjectResources> = {
             subjectCode: "M3 301",
             subjectName: "Numerical Methods and Probability Theory",
             department: "Mathematics",
-            semester: 3,
+            semester: 4,
             fileType: "PDF",
             pdfUrl: "https://drive.google.com/file/d/1p_Audt87BnOaNnjWEY46DdOjaSLckjGi/view?usp=sharing"
           }
@@ -3406,7 +3406,193 @@ export const subjectResources: Record<string, SubjectResources> = {
           ]
         }
       ]
-    }
+    },
+      coa: {
+        notes: {
+          rgpv:[],
+          college: [
+            {
+              id: "coa-notes-eduno-1",
+              title: "One Shot - 5 Minutes Engineering",
+              contributor: "Eduno Team",
+              subjectCode: "IT 402",
+              subjectName: "Computer Organization and Architecture",
+              department: "Information Technology",
+              semester: 4,
+              fileType: "PDF",
+              pdfUrl: "https://drive.google.com/file/d/1njYnMWAMaaukAJMj-YrbxNtfC62RnjCb/view"
+            },
+            {
+              id: "coa-notes-eduno-1",
+              title: "Unit 1 - Computer Architecture and Organization",
+              contributor: "Eduno Team",
+              subjectCode: "IT 402",
+              subjectName: "Computer Organization and Architecture",
+              department: "Information Technology",
+              semester: 4,
+              fileType: "PDF",
+              pdfUrl: "https://drive.google.com/file/d/1QTX7_ISi8U4_yA9Fl8CqMNRpwCazY0w4/view?usp=drive_link"
+            },
+            {
+              id: "coa-notes-eduno-2",
+              title: "Unit 2 - Arithmetic and Logic Unit",
+              contributor: "Eduno Team",
+              subjectCode: "IT 402",
+              subjectName: "Computer Organization and Architecture",
+              department: "Information Technology",
+              semester: 4,
+              fileType: "PDF",
+              pdfUrl: "https://drive.google.com/file/d/1hmGVGs8ja6ckjkyCIlMOq3h8HxqZc64a/view?usp=drive_link"
+            },
+            {
+              id: "coa-notes-eduno-3",
+              title: "Unit 3 - CPU and Stack Organization",
+              contributor: "Eduno Team",
+              subjectCode: "It 402",
+              subjectName: "Computer Organization and Architecture",
+              department: "Information Technology",
+              semester: 4,
+              fileType: "PDF",
+              pdfUrl: "https://drive.google.com/file/d/1NLEspa15tTt1ggpWZbmTH0Wr3nPDzFtv/view?usp=drive_link"
+            },
+            {
+              id: "coa-notes-eduno-4",
+              title: "Unit 4 - Memory Systems and Hierarchy",
+              contributor: "Eduno Team",
+              subjectCode: "IT 402",
+              subjectName: "Computer Organization and Architecture",
+              department: "Information Technology",
+              semester: 4,
+              fileType: "PDF",
+              pdfUrl: "https://drive.google.com/file/d/16hIl8pcwixF_iwQJ2_RKKNzvlH7qATg3/view?usp=drive_link"
+            },
+            {
+              id: "coa-notes-eduno-5",
+              title: "Unit 5 - Parallel Processing and Pipelining",
+              contributor: "Eduno Team",
+              subjectCode: "IT 402",
+              subjectName: "Computer Organization and Architecture",
+              department: "Information Technology",
+              semester: 4,
+              fileType: "PDF",
+              pdfUrl: "https://drive.google.com/file/d/1JqXYaFDtqz3cDKTzbpfhMSaj2gzrx-dt/view?usp=drive_link"
+            }
+          ]
+        },
+        pyq: {
+          yearWise: [],
+          unitWise: []
+        },
+        content: [
+          {id: "coa-one-shot",
+            title: "One shot - 5 Minutes Engineering",
+            type: "Video Content",
+            uploadedBy: "5 Minutes Engineering", 
+            uploadedOn: "2024-03-20",
+            subjectCode: "IT 402",
+            subjectName: "Computer Organization and Architecture",
+            department: "Information Technology",
+            semester: 4,
+            fileType: "Video",
+            videoUrl:"https://www.youtube.com/watch?v=1rUevQ3bSEY"},
+            {
+              id: "coa-one-shot",
+              title: "One Shot - Sanchit Sir",
+              type: "Video Content",
+              uploadedBy: "Sanchit Sir",
+              uploadedOn: "2024-03-20",
+              subjectCode: "IT 402",
+              subjectName: "Computer Organization and Architecture",
+              department: "Information Technology",
+              semester: 4,
+              fileType: "Video",
+              videoUrl:"https://www.youtube.com/watch?v=DsK35f8wyUw"
+              
+            }
+        ],
+        important: [],
+        syllabus: [
+          {
+            unit: 1,
+            title: "Computer Architecture and Organization",
+            topics: [
+              "Computer architecture and organization",
+              "Computer generations",
+              "Von Neumann model",
+              "CPU organization",
+              "Register organization",
+              "Various CPU registers",
+              "Register transfer",
+              "Bus and memory transfers",
+              "Arithmetic, logic, and shift micro-operations",
+              "Arithmetic logic shift unit"
+            ]
+          },
+          {
+            unit: 2,
+            title: "Arithmetic and Logic Unit",
+            topics: [
+              "The arithmetic and logic unit",
+              "Fixed-Point representation: integer representation, sign-magnitude, 1’s and 2’s complement and range",
+              "Integer arithmetic: negation, addition and subtraction, multiplication, division",
+              "Floating-Point representation",
+              "Floating-Point arithmetic",
+              "Hardwired and micro-programmed control units",
+              "Control memory",
+              "Micro-program sequence"
+            ]
+          },
+          {
+            unit: 3,
+            title: "CPU and Stack Organization",
+            topics: [
+              "Central Processing Unit (CPU)",
+              "Stack organization",
+              "Memory stack",
+              "Reverse Polish notation",
+              "Instruction formats: Zero, One, Two, Three-Address Instructions",
+              "RISC Instructions and CISC characteristics",
+              "Addressing modes",
+              "Modes of transfer",
+              "Priority interrupt",
+              "Daisy chaining",
+              "DMA",
+              "Input-Output Processor (IOP)"
+            ]
+          },
+          {
+            unit: 4,
+            title: "Memory Systems and Hierarchy",
+            topics: [
+              "Computer memory system",
+              "Memory hierarchy",
+              "Main memory: RAM, ROM chip",
+              "Auxiliary and associative memory",
+              "Cache memory: associative mapping, direct mapping, set-associative mapping, write policy",
+              "Cache performance",
+              "Virtual memory: address space, memory space, address mapping, paging and segmentation",
+              "TLB, page fault",
+              "Effective access time",
+              "Replacement algorithm"
+            ]
+          },
+          {
+            unit: 5,
+            title: "Parallel Processing and Pipelining",
+            topics: [
+              "Parallel processing",
+              "Pipelining: general considerations",
+              "Arithmetic pipeline",
+              "Instruction pipeline",
+              "Vector operations",
+              "Matrix multiplication",
+              "Memory interleaving",
+              "Multiprocessors: characteristics of multiprocessors"
+            ]
+          }
+        ]
+      }
+    
   
   
 };
